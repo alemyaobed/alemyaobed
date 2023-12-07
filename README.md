@@ -14,6 +14,10 @@
 
 ## 📊 My GitHub Stats:
 
+<div align="center">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact" width="60%" >
+  
+</div>
 
 <div align="center" style="display: flex; justify-content: space-between;">
     <img src="https://github-readme-stats.vercel.app/api?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true" width="48%" >
@@ -21,10 +25,7 @@
   
 </div>
 <br/> 
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact" width="60%" >
-  
-</div>
+
 
 
 ### 🏆 GitHub Trophies
