@@ -12,7 +12,7 @@
 
 
 
-# 📊 My GitHub Stats:
+## 📊 My GitHub Stats:
 
 
 <div align="center" style="display: flex; justify-content: space-between;">
@@ -26,7 +26,7 @@
 </div>
 
 
-## 🏆 GitHub Trophies
+### 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=lemyjay&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 
