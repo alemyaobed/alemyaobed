@@ -2,8 +2,8 @@
 
 - Hi 👋, I'm Obed.
 - 💞️ I'm a passionate Software Engineer from Ghana.
-- I hold a degree in Computer Science with first class honors from the Kwame Nkrumah University of Science and Technology, Kumasi - Ghana
-- I'm currently enrolled in the Software Engineering programme at ALX (currently an ALX student) with an interest in Backend Development.
+- 🌱 I hold a degree in Computer Science with first class honors from the Kwame Nkrumah University of Science and Technology, Kumasi - Ghana
+- 🌱 I'm currently enrolled in the Software Engineering programme at ALX (currently an ALX student) with an interest in Backend Development.
 - 👀 I’m interested in Data Analytics/Science and exploring new technologies
 - 🌱 I’m currently learning C sharp and python
 - 💞️ I’m looking to collaborate on any project
