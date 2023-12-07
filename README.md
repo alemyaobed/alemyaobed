@@ -7,7 +7,6 @@
 - 👀 I’m interested in Data Analytics/Science and exploring new technologies
 - 🌱 I’m currently learning C sharp and python
 - 💞️ I’m looking to collaborate on any project
-- 📫 You can reach me through <a href="mailto:lemyjay17@gmail.com">EMAIL</a>
 
 📊 My GitHub Stats:
 
