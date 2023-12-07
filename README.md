@@ -20,9 +20,9 @@
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact" width="40%" >
   
 </div>
-<br/> <br/><br/>
+<br/> 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false"size="70%">
 </div>
 
 
