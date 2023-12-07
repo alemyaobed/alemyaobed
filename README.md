@@ -22,7 +22,7 @@
 </div>
 <br/> 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false"size="70%">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false" size="40%">
 </div>
 
 
