@@ -1,4 +1,6 @@
-# Hi 👋 there...
+<div align="center">
+<h1>  Hi 👋 there...</h1>
+</div>
 
 - 😊 I'm Obed. 😉
 - 💞️ I'm a passionate Software Engineer from Ghana.
@@ -11,10 +13,17 @@
 
 
 # 📊 My GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true)
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+<div align="center" style="display: flex; justify-content: space-between;">
+    <img src="https://github-readme-stats.vercel.app/api?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true" width="51%" align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact" width="40%" align="right">
+  
+</div>
+<br/> <br/><br/>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false">
+</div>
 
 
 ## 🏆 GitHub Trophies
@@ -26,5 +35,8 @@
 - [LinkedIn](https://www.linkedin.com/in/lemyjay/)
 - [X->Twitter](https://x.com/lemyjay_)
 - [WhatsApp](https://wa.me/+233531376875)
+
+
+
 
 
