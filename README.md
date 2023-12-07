@@ -16,8 +16,8 @@
 
 
 <div align="center" style="display: flex; justify-content: space-between;">
-    <img src="https://github-readme-stats.vercel.app/api?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true" width="51%" align="left">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact" width="40%" align="right">
+    <img src="https://github-readme-stats.vercel.app/api?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true" width="51%" >
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact" width="40%" >
   
 </div>
 <br/> <br/><br/>
