@@ -11,9 +11,8 @@
 #### - 🌱 I’m currently learning C sharp and python.
 #### - 💞️ I’m looking to collaborate on any project.
 
-
-
-
+<br>
+<br>
 
 ## 📊 My GitHub Stats:
 
@@ -24,16 +23,16 @@
 
 <div align="center" style="display: flex; justify-content: space-between;">
     <img src="https://github-readme-stats.vercel.app/api?username=lemyjay&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true" width="48%" >
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false" width="48%">
-  
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=lemyjay&theme=highcontrast&show_border=false" width="48%">  
 </div>
-<br/> 
 
+<br>
 
-
-### 🏆 GitHub Trophies
+### 🏆 GitHub Trophies:
 ![](https://github-profile-trophy.vercel.app/?username=lemyjay&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
+<br>
+<br>
 
 ### 📫 Connect with me:
 - <a href="mailto:lemyjay17@gmail.com">Email</a>
