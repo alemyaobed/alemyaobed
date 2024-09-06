@@ -23,7 +23,7 @@
 </div>
 
 <div align="center" style="display: flex; justify-content: space-between;">
-    <img src="https://github-readme-stats.vercel.app/api?user=alemyaobed&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true" width="48%" >
+    <img src="https://github-readme-stats.vercel.app/api?username=alemyaobed&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true" width="48%" >
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=alemyaobed&theme=highcontrast&show_border=false" width="48%">  
 </div>
 
