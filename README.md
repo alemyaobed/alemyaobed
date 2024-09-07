@@ -1,16 +1,39 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=alemyaobed&label=Profile%20views&color=0e75b6&style=flat" alt="alemyaobed" /> </p>
 
 <div align="center">
-<h1>  Hi 👋 there...</h1>
+<h1>  Hello! 👋 </h1>
 </div>
 
-#### - 😊 I'm Obed ... 😉
-#### - 💞️ I'm a passionate Software Engineer from Ghana.
-#### - 🌱 I hold a degree in Computer Science from the Kwame Nkrumah University of Science and Technology, Kumasi - Ghana.
-#### - 🌱 I'm currently enrolled in the Software Engineering programme at ALX (currently an ALX student) with an interest in Backend Development.
-#### - 👀 I’m also interested in Data Analytics/Science and exploring new technologies.
-#### - 🌱 I’m currently learning C sharp and python.
-#### - 💞️ I’m looking to collaborate on any project.
+
+#### - 😎 Hello! I'm Obed Alemya, a passionate software engineer from Ghana.
+#### - 💻 I specialize in building scalable backend systems, APIs, and real-time applications.
+#### - 🏫 I hold a degree in Computer Science from KNUST and have completed the ALX Software Engineering Program.
+#### - 🚀 Tech Stack:
+
+**Languages:**
+- **Python 🐍**: Experienced in writing clean, efficient code for backend services, automation scripts, and data-driven applications.
+- **JavaScript (Node.js) 💻**: Skilled in building server-side applications, RESTful APIs, and real-time systems with Node.js.
+- **C, C++**: Solid understanding of systems programming, memory management, and building efficient algorithms.
+
+**Frameworks:**
+- **Django 🦄**: Proficient in developing robust, secure web applications, with expertise in REST API development and ORM.
+- **Flask 🧪**: Lightweight web frameworks for microservices and scalable applications.
+- **FastAPI ⚡**: Skilled in building fast, high-performance APIs, optimized for asynchronous tasks and modern Python features.
+- **Express.js**: Expertise in developing RESTful APIs and handling complex server-side logic in Node.js environments.
+
+**Databases:**
+- **PostgreSQL 🐘**: Strong experience in designing efficient relational database schemas, writing complex queries, and ensuring data integrity.
+- **MongoDB 🍃**: Hands-on experience with NoSQL databases, ideal for flexible, schema-less data structures and scaling applications.
+- **MySQL**: Knowledgeable in building structured database models, optimizing performance, and ensuring ACID compliance.
+
+**DevOps & Infrastructure:**
+- **Docker 🐳**: Proficient in containerizing applications for consistent and scalable deployments, simplifying the dev-to-production workflow.
+- **HAProxy ⚙️**: Skilled in configuring load balancing for high-availability systems, optimizing performance, and ensuring reliability.
+- **Jenkins 🚀**: Experience with CI/CD pipelines, automating builds, tests, and deployments to streamline development processes.
+- **AWS ☁️**: Familiar with deploying and managing applications on the cloud, utilizing services like EC2, S3, RDS, and Lambda for scalable solutions.
+
+#### - 💡 I’m currently diving deeper into cloud infrastructure with Kubernetes and AWS, working on real-time systems and microservices.
+#### - 💞️ I’m always looking to collaborate on impactful projects and contribute to open-source communities.
 
 <br>
 <br>
