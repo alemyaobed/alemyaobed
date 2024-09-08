@@ -5,7 +5,7 @@
 </div>
 
 
-#### - 😎 Hello! I'm Obed Alemya, a passionate software engineer from Ghana.
+#### - 😎 I'm Obed Alemya, a passionate software engineer from Ghana.
 #### - 💻 I specialize in building scalable backend systems, APIs, and real-time applications.
 #### - 🏫 I hold a degree in Computer Science from KNUST and have completed the ALX Software Engineering Program.
 #### - 🚀 Tech Stack:
