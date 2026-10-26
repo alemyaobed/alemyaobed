@@ -1,9 +1,10 @@
 import { HERO, SITE } from '../content'
 import { cvRequestHref } from '../utils'
+import { ThemeToggle } from './ThemeToggle'
 
 /**
- * The mobile top header, following the reference: name on the left and
- * the Request CV pill on the right, above the bottom tab bar.
+ * The mobile top header: name on the left, theme toggle and the
+ * Request CV pill on the right.
  * @returns The mobile header element.
  */
 export function Nav() {
@@ -12,12 +13,15 @@ export function Nav() {
       <a href="#home" className="font-mono text-lg text-ink">
         {SITE.shortName}
       </a>
-      <a
-        href={cvRequestHref()}
-        className="rounded-full border border-accent/50 bg-accent/10 px-4 py-2 text-sm text-accent transition-colors hover:bg-accent/20"
-      >
-        {HERO.requestCvCta}
-      </a>
+      <div className="flex items-center gap-3">
+        <ThemeToggle />
+        <a
+          href={cvRequestHref()}
+          className="rounded-full border border-accent/50 bg-accent/10 px-4 py-2 text-sm text-accent transition-colors hover:bg-accent/20"
+        >
+          {HERO.requestCvCta}
+        </a>
+      </div>
     </header>
   )
 }

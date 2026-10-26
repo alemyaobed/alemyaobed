@@ -5,6 +5,9 @@ import { RESUME } from '../content'
 import { ResumePage } from './ResumePage'
 
 document.title = RESUME.pageTitle
+document.documentElement.classList.add(
+  localStorage.getItem('theme') === 'light' ? 'light' : 'dark',
+)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

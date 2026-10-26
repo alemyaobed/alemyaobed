@@ -15,7 +15,7 @@ import { Section } from './Section'
 export function Work() {
   return (
     <Section id="work" title={WORK_HEADING}>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
           <article
             key={project.title}

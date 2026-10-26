@@ -16,6 +16,7 @@ import type {
 
 export const SITE = {
   name: 'Obed Alemya',
+  fullName: 'ALENYORIGE Obed Alemya',
   shortName: 'obed',
   role: 'Software Engineer',
   location: 'Kumasi, Ghana',
@@ -38,12 +39,16 @@ export const NAV_ITEMS: LinkItem[] = [
 
 // --- Hero ---
 
+/** Availability status shown as a pulsing dot in the hero. */
 export const HERO = {
   viewWorkCta: 'View my work',
   requestCvCta: 'Request CV',
   portraitAlt: 'Portrait of Obed Alemya',
   portraitSrc: '/avatar-256.png',
 } as const
+
+/** Heading of the code card's own section. */
+export const CODE_SECTION_TITLE = 'The engineer'
 
 // --- Stats bar ---
 
@@ -179,6 +184,13 @@ export const PROJECTS: Project[] = [
     href: 'https://github.com/alemyaobed/Real-Time_Chat_Application',
   },
   {
+    title: 'Automated Video Pipeline',
+    description:
+      'A Python pipeline that turns a narration script into a finished 1080p video: WhisperX alignment, automated AI illustration, and ffmpeg assembly with motion, captions and music. Built for my own YouTube channel.',
+    tags: ['Python', 'ffmpeg', 'WhisperX', 'AI'],
+    href: 'https://github.com/alemyaobed/ma-yt-auto',
+  },
+  {
     title: 'cu.rl',
     description:
       'URL shortener with platform, OS and location analytics. Django, DRF and PostgreSQL.',
@@ -258,7 +270,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     title: 'Software Engineer, Cloud & Infrastructure',
     organization: 'Amazéthu (Remote)',
     description:
-      'Led a project assessing our production infrastructure and its cost: documented the AWS estate, researched and compared providers, and executed the phased migration to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow, DNS and SSL cutover, and end-to-end validation. Beyond infrastructure, I run the team hiring end to end, from designing the candidate questionnaire through filtering 90 applicants to technical interviews, and I build the product retention analytics.',
+      'Led a project assessing our production infrastructure and its cost: documented the AWS estate, researched and compared providers, and executed the phased migration to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow, DNS and SSL cutover, and end-to-end validation. Beyond infrastructure, I have twice run the team hiring end to end, from designing the candidate questionnaire through filtering 90 applicants to technical interviews, and I have built the product retention analytics.',
   },
   {
     period: 'Apr 2025 - Jan 2026',
