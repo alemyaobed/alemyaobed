@@ -1,5 +1,20 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-page: var(--bg);
+  --color-ink: var(--text-h);
+  --color-muted: var(--text);
+  --color-line: var(--border);
+  --color-panel: var(--code-bg);
+  --color-accent: var(--accent);
+  --color-pill: var(--social-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
