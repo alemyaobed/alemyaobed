@@ -20,7 +20,8 @@ export interface Project {
   title: string
   description: string
   tags: string[]
-  href: string
+  /** Link opened by the card's call to action; absent for private work. */
+  href?: string
 }
 
 /** A titled group of skill pills. */
