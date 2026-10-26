@@ -13,12 +13,13 @@ import type {
 export const SITE = {
   name: 'Obed Alemya',
   shortName: 'obed',
-  role: 'Backend Software Engineer',
-  location: 'Ghana',
+  role: 'Software Engineer',
+  location: 'Kumasi, Ghana',
   greeting: "👋 Hello, I'm",
-  tagline: 'I build scalable backend systems, APIs and real-time applications.',
+  tagline:
+    'I build scalable backend systems, APIs and real-time applications — engineering today, data science tomorrow.',
   availability: 'Open to opportunities',
-  pageTitle: 'Obed Alemya — Backend Software Engineer',
+  pageTitle: 'Obed Alemya — Software Engineer',
 } as const
 
 // --- Navigation ---
@@ -39,7 +40,7 @@ export const HERO = {
   requestCvCta: 'Request CV',
 } as const
 
-export const CODE_CARD_TITLE = 'developer.js'
+export const CODE_CARD_TITLE = 'engineer.js'
 
 export const CODE_CARD_BANNER =
   'Open to new opportunities - let’s build something together!'
@@ -47,7 +48,7 @@ export const CODE_CARD_BANNER =
 export const CODE_CARD_LINES: CodeLine[] = [
   [
     { text: 'const ', tone: 'keyword' },
-    { text: 'developer', tone: 'key' },
+    { text: 'engineer', tone: 'key' },
     { text: ' = {', tone: 'plain' },
   ],
   [
@@ -57,12 +58,12 @@ export const CODE_CARD_LINES: CodeLine[] = [
   ],
   [
     { text: '  role: ', tone: 'plain' },
-    { text: "'Backend Engineer'", tone: 'string' },
+    { text: "'Software Engineer'", tone: 'string' },
     { text: ',', tone: 'plain' },
   ],
   [
     { text: '  location: ', tone: 'plain' },
-    { text: "'Ghana'", tone: 'string' },
+    { text: "'Kumasi, Ghana'", tone: 'string' },
     { text: ',', tone: 'plain' },
   ],
   [
@@ -77,6 +78,13 @@ export const CODE_CARD_LINES: CodeLine[] = [
     { text: '],', tone: 'plain' },
   ],
   [
+    { text: '  frontend: [', tone: 'plain' },
+    { text: "'React'", tone: 'string' },
+    { text: ', ', tone: 'plain' },
+    { text: "'TypeScript'", tone: 'string' },
+    { text: '],', tone: 'plain' },
+  ],
+  [
     { text: '  data: [', tone: 'plain' },
     { text: "'PostgreSQL'", tone: 'string' },
     { text: ', ', tone: 'plain' },
@@ -86,13 +94,18 @@ export const CODE_CARD_LINES: CodeLine[] = [
     { text: '],', tone: 'plain' },
   ],
   [
-    { text: '  ships: [', tone: 'plain' },
+    { text: '  cloud: [', tone: 'plain' },
+    { text: "'AWS'", tone: 'string' },
+    { text: ', ', tone: 'plain' },
     { text: "'Docker'", tone: 'string' },
     { text: ', ', tone: 'plain' },
-    { text: "'Jenkins'", tone: 'string' },
-    { text: ', ', tone: 'plain' },
-    { text: "'AWS'", tone: 'string' },
+    { text: "'GitHub Actions'", tone: 'string' },
     { text: '],', tone: 'plain' },
+  ],
+  [
+    { text: '  next: ', tone: 'plain' },
+    { text: "'data science'", tone: 'string' },
+    { text: ',', tone: 'plain' },
   ],
   [
     { text: '  openToWork: ', tone: 'plain' },
@@ -107,8 +120,9 @@ export const CODE_CARD_LINES: CodeLine[] = [
 export const ABOUT = {
   heading: 'About',
   paragraphs: [
-    "I'm a software engineer from Ghana who specialises in the backend: scalable services, REST APIs and real-time applications. I hold a BSc in Computer Science from KNUST and completed the ALX Software Engineering Program.",
-    'Most days I write Python and Node.js across Django, Flask, FastAPI and Express, back them with PostgreSQL, MongoDB or MySQL, and ship them with Docker, Jenkins and AWS. Right now I am going deeper on Kubernetes, real-time systems and microservices - and I am always glad to collaborate on impactful projects and open source.',
+    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. Most recently I was a Junior Software Engineer at Amazéthu, building features across React, Node.js/Express and FastAPI, and driving QA automation with Playwright that cut deployment errors by 20%.",
+    'Before that, at KNUST University IT Services, I built TekNotify — a Django, RabbitMQ and Celery bulk-messaging system with Paystack payments — plus a C#/ASP.NET endowment system, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with AWS, Docker and GitHub Actions.',
+    "Software engineer today, data scientist in the making: I've been working around AI-powered systems and cloud infrastructure, and I'm steadily building toward data science and analytics.",
   ],
 } as const
 
@@ -122,28 +136,48 @@ export const WORK_VIEW_ALL: LinkItem = {
   href: 'https://github.com/alemyaobed?tab=repositories',
 }
 
-// TODO(owner): replace these placeholder cards with real projects.
 export const PROJECTS: Project[] = [
   {
-    title: 'Project one',
+    title: 'cu.rl',
     description:
-      'Placeholder card. Replace with a real project, what it does and the outcome it delivered.',
-    tags: ['Python', 'Django', 'PostgreSQL'],
-    href: 'https://github.com/alemyaobed',
+      'URL shortener with platform, OS and location analytics. Django, DRF and PostgreSQL.',
+    tags: ['Django', 'DRF', 'PostgreSQL'],
+    href: 'https://github.com/alemyaobed/cu.rl',
   },
   {
-    title: 'Project two',
+    title: 'Inventory Management System',
     description:
-      'Placeholder card. Replace with a real project, what it does and the outcome it delivered.',
+      'Stock-level tracking service built with FastAPI and PostgreSQL.',
+    tags: ['FastAPI', 'PostgreSQL', 'Python'],
+    href: 'https://github.com/alemyaobed/Inventory_Management_System',
+  },
+  {
+    title: 'Real-Time Chat Application',
+    description:
+      'Real-time chat over WebSockets with Node.js, Express and MongoDB.',
     tags: ['Node.js', 'Express.js', 'MongoDB'],
-    href: 'https://github.com/alemyaobed',
+    href: 'https://github.com/alemyaobed/Real-Time_Chat_Application',
   },
   {
-    title: 'Project three',
+    title: 'Pocket Bank',
     description:
-      'Placeholder card. Replace with a real project, what it does and the outcome it delivered.',
-    tags: ['FastAPI', 'Docker', 'AWS'],
-    href: 'https://github.com/alemyaobed',
+      'Banking app with Django REST: accounts, transactions, loans and financial reporting.',
+    tags: ['Django', 'DRF', 'SQLite'],
+    href: 'https://github.com/alemyaobed/Pocket_Bank',
+  },
+  {
+    title: 'Billable Hours Invoicing',
+    description:
+      'Web app that generates invoices from employee timesheets based on billable hours.',
+    tags: ['Django', 'Python'],
+    href: 'https://github.com/alemyaobed/billable-hours-invoicing',
+  },
+  {
+    title: 'Airbnb Clone',
+    description:
+      'ALX capstone: simplified Airbnb with Nginx load balancing, Puppet, Certbot and Datadog.',
+    tags: ['Flask', 'Nginx', 'Puppet'],
+    href: 'https://github.com/alemyaobed/AirBnB_clone_v4',
   },
 ]
 
@@ -152,15 +186,29 @@ export const PROJECTS: Project[] = [
 export const SKILLS_HEADING = 'Technologies I work with'
 
 export const SKILL_GROUPS: SkillGroup[] = [
-  { label: 'Languages', skills: ['Python', 'JavaScript', 'C', 'C++', 'SQL'] },
+  { label: 'Languages', skills: ['Python', 'TypeScript', 'JavaScript', 'C', 'C#', 'SQL'] },
   {
     label: 'Frameworks & runtimes',
-    skills: ['Django', 'Flask', 'FastAPI', 'Node.js', 'Express.js'],
+    skills: [
+      'Django',
+      'DRF',
+      'Flask',
+      'FastAPI',
+      'Node.js',
+      'Express.js',
+      'React',
+      'Tailwind CSS',
+      'ASP.NET Core',
+    ],
   },
-  { label: 'Databases', skills: ['PostgreSQL', 'MongoDB', 'MySQL'] },
+  { label: 'Data', skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'SQLite', 'MSSQL'] },
   {
-    label: 'DevOps & cloud',
-    skills: ['Docker', 'HAProxy', 'Jenkins', 'AWS', 'Kubernetes', 'Git'],
+    label: 'Cloud & DevOps',
+    skills: ['AWS', 'Docker', 'GitHub Actions', 'Jenkins', 'Nginx', 'HAProxy', 'Linux', 'Git'],
+  },
+  {
+    label: 'Practices & tooling',
+    skills: ['TDD', 'Playwright', 'RabbitMQ', 'Celery', 'Firebase', 'Sphinx', 'JSDoc'],
   },
 ]
 
@@ -168,26 +216,47 @@ export const SKILL_GROUPS: SkillGroup[] = [
 
 export const EXPERIENCE_HEADING = 'Experience'
 
-// TODO(owner): replace the placeholder role with real work history and periods.
 export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
   {
-    period: '—',
-    title: 'Software Engineer',
-    organization: 'Company to be added',
+    period: 'Apr 2025 - Aug 2025',
+    title: 'Junior Software Engineer',
+    organization: 'Amazéthu (Remote)',
     description:
-      'Placeholder entry. Replace with the most recent role, what was built and the measurable outcome.',
+      'Built features across React, Node.js/Express and FastAPI, including a Google Calendar reminder feature with recurrence rules. Drove QA automation with Playwright and automated failure alerts, cutting deployment errors by 20%.',
   },
   {
-    period: '—',
-    title: 'Software Engineering Program',
-    organization: 'ALX',
-    description: 'Completed the intensive ALX software engineering programme.',
+    period: 'Dec 2024 - Apr 2025',
+    title: 'Software Engineer Intern',
+    organization: 'Amazéthu (Remote)',
+    description:
+      'Shipped React features (Firebase Auth, responsive Tailwind UI), contributed to Express and FastAPI services, and supported CI/CD with Playwright user-flow tests.',
   },
   {
-    period: '—',
-    title: 'BSc Computer Science',
+    period: 'Nov 2023 - Dec 2024',
+    title: 'Software Engineer — National Service & ICT Assistant',
+    organization: 'KNUST University IT Services',
+    description:
+      'Built TekNotify, a Django, RabbitMQ and Celery bulk-messaging system with Paystack payments; developed a C#/ASP.NET endowment system; modeled databases and wrote stored procedures.',
+  },
+  {
+    period: 'Oct 2022 - Dec 2022',
+    title: 'ICT Intern',
+    organization: 'GIFEC, Nkoranza',
+    description:
+      'Supported ICT infrastructure for underserved communities and taught web development workshops.',
+  },
+  {
+    period: 'Jul 2023 - Aug 2024',
+    title: 'Software Engineering Program — Backend',
+    organization: 'ALX (Holberton affiliated)',
+    description:
+      'Twelve-month intensive programme; ALX-backend portfolio including an Airbnb clone with Nginx, Puppet, Certbot and Datadog.',
+  },
+  {
+    period: '2019 - 2023',
+    title: 'BSc Computer Science — First Class',
     organization: 'KNUST',
-    description: 'Degree in Computer Science.',
+    description: 'Kwame Nkrumah University of Science and Technology, Kumasi.',
   },
 ]
 
@@ -203,8 +272,6 @@ export const CONTACT = {
 export const SOCIALS: LinkItem[] = [
   { label: 'GitHub', href: 'https://github.com/alemyaobed' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alemyaobed/' },
-  { label: 'X', href: 'https://x.com/lemyjay_' },
-  { label: 'WhatsApp', href: 'https://wa.me/233531376875' },
 ]
 
 export const CV_REQUEST_SUBJECT = 'CV request — Obed Alemya'
@@ -214,7 +281,7 @@ export const CV_REQUEST_BODY =
 // --- Footer ---
 
 export const FOOTER = {
-  tagline: 'Building backend systems that scale.',
+  tagline: 'Engineering today, data science tomorrow.',
   stack: 'Built with React, TypeScript and Tailwind CSS.',
   rights: '© 2026 Obed Alemya. All rights reserved.',
 } as const
