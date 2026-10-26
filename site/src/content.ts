@@ -120,8 +120,8 @@ export const CODE_CARD_LINES: CodeLine[] = [
 export const ABOUT = {
   heading: 'About',
   paragraphs: [
-    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. Most recently I was a Junior Software Engineer at Amazéthu, building features across React, Node.js/Express and FastAPI, and driving QA automation with Playwright that cut deployment errors by 20%.",
-    'Before that, at KNUST University IT Services, I built TekNotify, a Django, RabbitMQ and Celery bulk-messaging system with Paystack payments, plus a C#/ASP.NET endowment system, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with AWS, Docker and GitHub Actions.',
+    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. At Amazéthu I grew from intern to junior engineer to my current role in cloud and infrastructure, where I own cost optimization and platform decisions on a production AWS estate.",
+    'Along the way I drove QA automation with Playwright that cut deployment errors by 20%, built TekNotify (Django, RabbitMQ, Celery) at KNUST University IT Services, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with AWS, Docker and GitHub Actions.',
     "Software engineer today, data scientist in the making: I've been working around AI-powered systems and cloud infrastructure, and I'm steadily building toward data science and analytics.",
   ],
 } as const
@@ -221,7 +221,14 @@ export const EXPERIENCE_HEADING = 'Experience'
 
 export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
   {
-    period: 'Apr 2025 - Aug 2025',
+    period: 'Jan 2026 - Present',
+    title: 'Software Engineer, Cloud & Infrastructure',
+    organization: 'Amazéthu (Remote)',
+    description:
+      'Own the low-cost infrastructure project: mapped the production AWS estate (ECS Fargate, ECR, S3, CloudWatch, API Gateway), drove cost optimization that reduced the monthly bill, authored the cloud migration analysis and validated new Render infrastructure. Also direct hiring strategy and retention analytics.',
+  },
+  {
+    period: 'Apr 2025 - Jan 2026',
     title: 'Junior Software Engineer',
     organization: 'Amazéthu (Remote)',
     description:
