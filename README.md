@@ -1,31 +1,22 @@
-### Hi, I'm Obed Alemya 👋
+## Obed Alemya
 
-Software engineer from Kumasi, Ghana — backend systems, APIs and real-time applications. Software engineer today, data scientist in the making: I work around AI-powered systems and cloud infrastructure, and I'm steadily building toward data science and analytics.
+Software engineer based in Kumasi, Ghana. Most of my work lives on the backend: APIs in Python and Node.js, data in PostgreSQL and MongoDB, shipped with Docker and GitHub Actions. Lately I have been working close to AI systems and cloud infrastructure, and I am steadily steering toward data science.
 
-- 🏫 BSc Computer Science, KNUST (First Class) · ALX Software Engineering Program (Backend)
-- 💼 Junior Software Engineer @ Amazéthu — React, Node.js/Express, FastAPI, QA automation with Playwright
-- 🏆 2nd place, DIGILOG Hackathon 2023
-- 📫 [LinkedIn](https://www.linkedin.com/in/alemyaobed/) · [GitHub](https://github.com/alemyaobed) · [alemyaobed@gmail.com](mailto:alemyaobed@gmail.com)
+A few things that shape how I work: a First Class BSc in Computer Science from KNUST, the ALX Software Engineering Program, and a habit of automating the boring parts, like the Playwright suites that cut deployment errors by 20% on a production app.
 
-#### Languages
+### Skills
 
-[![Skills](https://skillicons.dev/icons?i=py,ts,js,c,cs)](https://skillicons.dev)
+[![Languages](https://skillicons.dev/icons?i=py,ts,js,c,cs)](https://skillicons.dev)
 
-#### Frameworks & runtimes
+[![Frameworks and runtimes](https://skillicons.dev/icons?i=django,fastapi,nodejs,express,react,tailwind)](https://skillicons.dev)
 
-[![Skills](https://skillicons.dev/icons?i=django,fastapi,nodejs,express,react,tailwind)](https://skillicons.dev)
+[![Data](https://skillicons.dev/icons?i=postgres,mysql,mongo)](https://skillicons.dev)
 
-#### Data
+[![Cloud and DevOps](https://skillicons.dev/icons?i=docker,aws,githubactions,nginx,linux,git)](https://skillicons.dev)
 
-[![Skills](https://skillicons.dev/icons?i=postgres,mysql,mongo)](https://skillicons.dev)
+Also in the toolbox: DRF, Flask, ASP.NET Core, RabbitMQ, Celery, Playwright, Firebase, Puppet, HAProxy, TDD.
 
-#### Cloud & DevOps
-
-[![Skills](https://skillicons.dev/icons?i=docker,aws,githubactions,nginx,linux,git)](https://skillicons.dev)
-
-Also in the toolbox: DRF, Flask, ASP.NET Core, RabbitMQ, Celery, Playwright, Firebase, HAProxy, Jenkins, Puppet, Certbot.
-
-## 📊 My GitHub Stats:
+### Stats
 
 <div align="center">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alemyaobed&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact" width="60%" >
@@ -36,8 +27,16 @@ Also in the toolbox: DRF, Flask, ASP.NET Core, RabbitMQ, Celery, Playwright, Fir
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=alemyaobed&theme=highcontrast&show_border=false" width="48%">
 </div>
 
-### 🏆 GitHub Trophies:
+### Activity
+
+![Contribution activity](https://github-readme-activity-graph.vercel.app/graph?username=alemyaobed&theme=highcontrast&hide_border=true)
+
+### Trophies
 
 ![](https://github-profile-trophy.vercel.app/?username=alemyaobed&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
+### Contact
+
+[LinkedIn](https://www.linkedin.com/in/alemyaobed/) · [GitHub](https://github.com/alemyaobed) · [alemyaobed@gmail.com](mailto:alemyaobed@gmail.com)
 
 <!-- Add the live portfolio link here once deployment is approved -->

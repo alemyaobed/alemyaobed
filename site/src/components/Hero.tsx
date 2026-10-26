@@ -36,7 +36,7 @@ export function Hero() {
               {SITE.availability}
             </span>
             <span className="rounded-full border border-line bg-pill px-3 py-1 text-sm text-muted">
-              📍 {SITE.location}
+              {SITE.location}
             </span>
           </div>
         </div>
