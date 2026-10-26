@@ -18,16 +18,16 @@ export function Hero() {
         <p className="mx-auto mt-4 max-w-md text-muted">{SITE.tagline}</p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
-            href={cvRequestHref()}
+            href="#work"
             className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
           >
-            {HERO.requestCvCta}
+            {HERO.viewWorkCta}
           </a>
           <a
-            href="#work"
+            href={cvRequestHref()}
             className="rounded-full border border-accent/50 bg-accent/10 px-6 py-3 text-sm text-accent transition-colors hover:bg-accent/20"
           >
-            {HERO.viewWorkCta}
+            {HERO.requestCvCta}
           </a>
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -43,8 +43,8 @@ export function Hero() {
             src={HERO.portraitSrc}
             alt={HERO.portraitAlt}
             width={256}
-            height={256}
-            className="mx-auto size-48 rounded-2xl border border-line object-cover shadow-lg md:size-full md:max-h-80 md:rounded-3xl"
+            height={320}
+            className="mx-auto aspect-[4/5] w-48 rounded-3xl border border-line object-cover shadow-lg md:w-64"
           />
           <CodeCard />
         </div>

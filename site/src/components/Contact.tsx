@@ -1,10 +1,17 @@
 import { CONTACT, HERO, SOCIALS } from '../content'
 import { cvRequestHref } from '../utils'
+import { IconGitHub, IconLinkedIn } from './icons'
 import { Section } from './Section'
 
+/** Map from social label to its brand icon component. */
+const SOCIAL_ICONS: Record<string, typeof IconGitHub> = {
+  GitHub: IconGitHub,
+  LinkedIn: IconLinkedIn,
+}
+
 /**
- * The closing call-to-action band: heading, lead, the email button and
- * the social pills, all centered like the reference.
+ * The closing call-to-action band: heading, lead, the email button,
+ * the CV button and contact icon buttons, all centered.
  * @returns The contact section element.
  */
 export function Contact() {
@@ -23,17 +30,21 @@ export function Contact() {
         >
           {HERO.requestCvCta}
         </a>
-        {SOCIALS.map((social) => (
-          <a
-            key={social.href}
-            href={social.href}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full border border-line bg-pill px-4 py-2 text-sm text-muted transition-colors hover:border-accent/50 hover:text-accent"
-          >
-            {social.label}
-          </a>
-        ))}
+        {SOCIALS.map((social) => {
+          const Icon = SOCIAL_ICONS[social.label]
+          return (
+            <a
+              key={social.href}
+              href={social.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={social.label}
+              className="inline-flex items-center justify-center rounded-full border border-line bg-pill p-3 text-muted transition-colors hover:border-accent/50 hover:text-accent"
+            >
+              {Icon ? <Icon className="h-4 w-4" /> : social.label}
+            </a>
+          )
+        })}
       </div>
     </Section>
   )
