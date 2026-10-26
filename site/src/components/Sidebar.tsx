@@ -1,4 +1,5 @@
 import { CONTACT, NAV_ITEMS, RESUME_NAV, SITE, SOCIALS } from '../content'
+import { useActiveSection } from '../hooks/useActiveSection'
 import {
   IconBriefcase,
   IconClock,
@@ -34,6 +35,7 @@ const ICON_BUTTON =
  * @returns The sidebar element.
  */
 export function Sidebar() {
+  const active = useActiveSection(NAV_ITEMS.map((item) => item.href))
   return (
     <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col justify-between border-r border-line bg-page py-6 lg:flex">
       <div>
@@ -44,12 +46,22 @@ export function Sidebar() {
         <nav aria-label="Primary" className="flex flex-col gap-0.5">
           {NAV_ITEMS.map((item) => {
             const Icon = SECTION_ICONS[item.href] ?? IconHome
+            const isActive = item.href === active
             return (
               <a
                 key={item.href}
                 href={item.href}
-                className="flex items-center gap-3 px-5 py-3 text-xs font-medium uppercase tracking-[0.07em] text-muted transition-colors hover:text-accent"
+                aria-current={isActive ? 'page' : undefined}
+                className={`relative flex items-center gap-3 px-5 py-3 text-xs font-medium uppercase tracking-[0.07em] transition-colors ${
+                  isActive ? 'bg-accent/10 text-accent' : 'text-muted hover:text-accent'
+                }`}
               >
+                {isActive && (
+                  <span
+                    className="absolute inset-y-0 left-0 w-[3px] bg-accent"
+                    aria-hidden="true"
+                  />
+                )}
                 <Icon className="h-[15px] w-[15px] shrink-0" />
                 <span>{item.label}</span>
               </a>

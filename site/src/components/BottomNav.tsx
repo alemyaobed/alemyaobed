@@ -1,4 +1,5 @@
 import { NAV_ITEMS } from '../content'
+import { useActiveSection } from '../hooks/useActiveSection'
 import {
   IconBriefcase,
   IconClock,
@@ -26,6 +27,7 @@ const SECTION_ICONS: Record<string, ComponentType<IconProps>> = {
  * @returns The bottom tab bar element.
  */
 export function BottomNav() {
+  const active = useActiveSection(NAV_ITEMS.map((item) => item.href))
   return (
     <nav
       aria-label="Primary"
@@ -33,11 +35,15 @@ export function BottomNav() {
     >
       {NAV_ITEMS.map((item) => {
         const Icon = SECTION_ICONS[item.href] ?? IconHome
+        const isActive = item.href === active
         return (
           <a
             key={item.href}
             href={item.href}
-            className="flex flex-col items-center gap-1 py-2.5 text-[0.6rem] font-medium uppercase tracking-wider text-muted transition-colors hover:text-accent"
+            aria-current={isActive ? 'page' : undefined}
+            className={`flex flex-col items-center gap-1 py-2.5 text-[0.6rem] font-medium uppercase tracking-wider transition-colors ${
+              isActive ? 'text-accent' : 'text-muted hover:text-accent'
+            }`}
           >
             <Icon className="h-4 w-4" />
             <span>{item.label}</span>

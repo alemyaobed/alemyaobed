@@ -258,7 +258,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     title: 'Software Engineer, Cloud & Infrastructure',
     organization: 'Amazéthu (Remote)',
     description:
-      'Led a project assessing our production infrastructure and its cost: documented the AWS estate, researched and compared providers, and executed the phased migration to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow, DNS and SSL cutover, and end-to-end validation. Also directs hiring strategy and retention analytics.',
+      'Led a project assessing our production infrastructure and its cost: documented the AWS estate, researched and compared providers, and executed the phased migration to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow, DNS and SSL cutover, and end-to-end validation. Beyond infrastructure, I run the team hiring end to end, from designing the candidate questionnaire through filtering 90 applicants to technical interviews, and I build the product retention analytics.',
   },
   {
     period: 'Apr 2025 - Jan 2026',
