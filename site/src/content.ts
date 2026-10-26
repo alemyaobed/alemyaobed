@@ -5,6 +5,8 @@ import type {
   ExperienceEntry,
   LinkItem,
   Project,
+  ResumeRole,
+  ResumeSkills,
   SkillGroup,
 } from './types'
 
@@ -282,4 +284,92 @@ export const FOOTER = {
   tagline: 'Building backend systems that scale.',
   stack: 'Built with React, TypeScript and Tailwind CSS.',
   rights: '© 2026 Obed Alemya. All rights reserved.',
+  resumeLink: { label: 'Resume', href: '/resume/' },
 } as const
+
+// --- Resume page ---
+
+/** Browser tab title for the resume page. */
+export const RESUME_PAGE_TITLE = 'Obed Alemya, Resume'
+
+/** Contact line and summary on the resume page. */
+export const RESUME = {
+  pageTitle: RESUME_PAGE_TITLE,
+  heading: 'Obed Alemya',
+  contact: 'Kumasi, Ghana · alemyaobed@gmail.com · github.com/alemyaobed · linkedin.com/in/alemyaobed',
+  printCta: 'Save as PDF',
+  printHint: 'Opens your browser print dialog; choose Save as PDF.',
+  summary:
+    'Software engineer working across backend systems, cloud infrastructure and applied LLM work. Three years of growing ownership on a production AI language-learning product: I started as an intern, and now I run its cloud infrastructure after leading the migration from AWS to a low-cost platform, cutting monthly spend by roughly 85%. I build evaluation systems for AI output, I treat cost, quality and latency as engineering trade-offs, and I measure before I claim anything is done. First Class BSc in Computer Science from KNUST.',
+  rolesHeading: 'Experience',
+  skillsHeading: 'Skills',
+  researchHeading: 'Research and projects',
+  educationHeading: 'Education',
+} as const
+
+/** Work history on the resume page. */
+export const RESUME_ROLES: ResumeRole[] = [
+  {
+    period: 'January 2026 - Present',
+    title: 'Software Engineer, Cloud & Infrastructure',
+    organization: 'Amazethu (Remote)',
+    bullets: [
+      'Led the low-cost infrastructure project end to end: documented the production AWS estate, evaluated five providers, built the comparison matrix and decision framework, and executed the phased migration to Render, heaviest service first, with no user-facing downtime.',
+      'Runs staging and production at roughly one sixth of the previous AWS cost, balancing cost against spin-up latency with a keep-warm setup and explicit trade-off notes.',
+      'Built evaluation systems for the LLM tutor: a local testbed with simulated students, content review pipelines and quality control workflows.',
+      'Directs hiring strategy (questionnaire to 90 candidates, two-stage filtering, interviews) and retention analytics; found and fixed a signup event design flaw.',
+    ],
+  },
+  {
+    period: 'April 2025 - January 2026',
+    title: 'Junior Software Engineer',
+    organization: 'Amazethu (Remote)',
+    bullets: [
+      'Shipped features across React, Node.js/Express and Python (FastAPI), including a Google Calendar reminder feature with recurrence rules.',
+      'Drove QA automation with Playwright user-flow tests and automated failure alerts, cutting deployment errors by 20%.',
+      'Mentored interns, ran technical interviews and standardised code quality with ESLint, Black and JSDoc.',
+    ],
+  },
+  {
+    period: 'December 2024 - April 2025',
+    title: 'Software Engineer Intern',
+    organization: 'Amazethu (Remote)',
+    bullets: [
+      'Shipped React features: Firebase Authentication with custom hooks, calendar sync, responsive Tailwind UI.',
+      'Contributed to Express and FastAPI services and supported CI/CD with Playwright tests.',
+    ],
+  },
+  {
+    period: 'November 2023 - January 2025',
+    title: 'Software Engineer, National Service then ICT Assistant',
+    organization: 'KNUST University IT Services',
+    bullets: [
+      'Built TekNotify, a bulk messaging system with Django, RabbitMQ, Celery and Paystack payments, plus a C#/ASP.NET endowment system.',
+      'Handled database modelling, stored procedures and Sphinx documentation.',
+    ],
+  },
+]
+
+/** Skills rows on the resume page. */
+export const RESUME_SKILLS: ResumeSkills[] = [
+  { label: 'Languages', items: ['Python', 'TypeScript', 'JavaScript', 'C', 'C#', 'SQL'] },
+  {
+    label: 'Frameworks',
+    items: ['Django', 'DRF', 'Flask', 'FastAPI', 'Node.js', 'Express.js', 'React', 'Tailwind CSS', 'ASP.NET Core'],
+  },
+  { label: 'Databases', items: ['PostgreSQL', 'MongoDB', 'MySQL', 'SQLite', 'MSSQL'] },
+  { label: 'Cloud & DevOps', items: ['AWS', 'Render', 'Docker', 'GitHub Actions', 'Nginx', 'HAProxy', 'Linux', 'Firebase'] },
+  { label: 'AI & Quality', items: ['LLM evaluation harnesses', 'Simulated-user testing', 'Prompt and content pipelines', 'Playwright', 'TDD', 'CI/CD'] },
+]
+
+/** Research and project highlights on the resume page. */
+export const RESUME_RESEARCH: string[] = [
+  'The Perfectionism Trap (2025): measured how iterative AI suggestions drift from original intent over fifty rounds (semantic similarity fell from 1.0 to -0.13). Built the experimental pipeline with alternating LLMs and Sentence Transformer metrics. github.com/alemyaobed/ai-perfectionism-and-semantic-drift',
+  'cu.rl: a URL shortener with platform, OS and location analytics. Django, DRF and PostgreSQL.',
+]
+
+/** Education and honors lines on the resume page. */
+export const RESUME_EDUCATION: string[] = [
+  'BSc Computer Science, First Class Honours, KNUST, 2019 - 2023. ALX Software Engineering Program, backend specialisation, 2023 - 2024.',
+  'Second place, DIGILOG Hackathon 2023.',
+]
