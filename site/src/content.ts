@@ -148,7 +148,7 @@ export const CODE_CARD_LINES: CodeLine[] = [
 export const ABOUT = {
   heading: 'About',
   paragraphs: [
-    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. At Amazéthu I grew from intern to junior engineer to my current role in cloud and infrastructure, where I led the migration of our production stack from AWS to low-cost infrastructure on Render.",
+    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. At Amazéthu I grew from intern to junior engineer to my current role in cloud and infrastructure, where I led the assessment and migration of our production infrastructure from AWS to Render.",
     'Along the way I drove QA automation with Playwright that cut deployment errors by 20%, built TekNotify (Django, RabbitMQ, Celery) at KNUST University IT Services, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with GitHub Actions and Docker.',
   ],
 } as const
@@ -164,6 +164,12 @@ export const WORK_VIEW_ALL: LinkItem = {
 }
 
 export const PROJECTS: Project[] = [
+  {
+    title: 'Automated Fish Feeder System',
+    description:
+      'IoT final-year project: a sensor-driven control system for feeding and water management that cut manual labor by about 40% on small-scale farms.',
+    tags: ['IoT', 'Automation', 'Sensors'],
+  },
   {
     title: 'cu.rl',
     description:
@@ -252,7 +258,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     title: 'Software Engineer, Cloud & Infrastructure',
     organization: 'Amazéthu (Remote)',
     description:
-      'Led the low-cost infrastructure project: researched and compared free-tier providers, then planned and executed the phased migration of the production stack from AWS to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow for free-tier services, DNS and SSL cutover, and end-to-end validation. Also directs hiring strategy and retention analytics.',
+      'Led a project assessing our production infrastructure and its cost: documented the AWS estate, researched and compared providers, and executed the phased migration to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow, DNS and SSL cutover, and end-to-end validation. Also directs hiring strategy and retention analytics.',
   },
   {
     period: 'Apr 2025 - Jan 2026',
@@ -359,7 +365,7 @@ export const RESUME = {
   printCta: 'Save as PDF',
   printHint: 'Opens your browser print dialog; choose Save as PDF.',
   summary:
-    'Software engineer working across backend systems, cloud infrastructure and applied LLM work. Three years of growing ownership on a production AI language-learning product: I started as an intern, and now I run its cloud infrastructure after leading the migration from AWS to a low-cost platform, cutting monthly spend by roughly 85%. I build evaluation systems for AI output, I treat cost, quality and latency as engineering trade-offs, and I measure before I claim anything is done. First Class BSc in Computer Science from KNUST.',
+    'Software engineer working across backend systems, cloud infrastructure and applied LLM work. Three years of growing ownership on a production AI language-learning product: I started as an intern, and now I run its cloud infrastructure after leading a project that assessed the estate, cut its cost by roughly 85% and migrated it from AWS to Render. I build evaluation systems for AI output, I treat cost, quality and latency as engineering trade-offs, and I measure before I claim anything is done. First Class BSc in Computer Science from KNUST.',
   rolesHeading: 'Experience',
   skillsHeading: 'Skills',
   researchHeading: 'Research and projects',
@@ -373,7 +379,7 @@ export const RESUME_ROLES: ResumeRole[] = [
     title: 'Software Engineer, Cloud & Infrastructure',
     organization: 'Amazethu (Remote)',
     bullets: [
-      'Led the low-cost infrastructure project end to end: documented the production AWS estate, evaluated five providers, built the comparison matrix and decision framework, and executed the phased migration to Render, heaviest service first, with no user-facing downtime.',
+      'Led a project assessing the production infrastructure and its cost: documented the AWS estate, built the provider comparison and decision framework, and executed the phased migration to Render (heaviest service first) with tag-based GitHub Actions deploys, DNS and SSL cutover, and end-to-end validation.',
       'Runs staging and production at roughly one sixth of the previous AWS cost, balancing cost against spin-up latency with a keep-warm setup and explicit trade-off notes.',
       'Built evaluation systems for the LLM tutor: a local testbed with simulated students, content review pipelines and quality control workflows.',
       'Directs hiring strategy (questionnaire to 90 candidates, two-stage filtering, interviews) and retention analytics; found and fixed a signup event design flaw.',
@@ -424,6 +430,7 @@ export const RESUME_SKILLS: ResumeSkills[] = [
 /** Research and project highlights on the resume page. */
 export const RESUME_RESEARCH: string[] = [
   'The Perfectionism Trap (2025): measured how iterative AI suggestions drift from original intent over fifty rounds (semantic similarity fell from 1.0 to -0.13). Built the experimental pipeline with alternating LLMs and Sentence Transformer metrics. github.com/alemyaobed/ai-perfectionism-and-semantic-drift',
+  'Automated Fish Feeder System (final-year project): IoT control system with sensor feedback for feeding and water management; about 40% less manual labor on small-scale farms.',
   'cu.rl: a URL shortener with platform, OS and location analytics. Django, DRF and PostgreSQL.',
 ]
 

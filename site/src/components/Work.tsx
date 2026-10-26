@@ -39,14 +39,16 @@ export function Work() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={project.href}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-4 text-sm text-accent hover:underline"
-              >
-                {WORK_CARD_CTA} →
-              </a>
+              {project.href && (
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 text-sm text-accent hover:underline"
+                >
+                  {WORK_CARD_CTA} →
+                </a>
+              )}
             </div>
           </article>
         ))}
