@@ -34,9 +34,6 @@ export function Hero() {
           <span className="rounded-full border border-accent/50 bg-accent/10 px-3 py-1 text-sm text-accent">
             {SITE.availability}
           </span>
-          <span className="rounded-full border border-line bg-pill px-3 py-1 text-sm text-muted">
-            {SITE.location}
-          </span>
         </div>
         <div className="mt-14 grid items-center gap-10 md:grid-cols-2">
           <img

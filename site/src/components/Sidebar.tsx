@@ -1,7 +1,8 @@
-import { CONTACT, NAV_ITEMS, SITE, SOCIALS } from '../content'
+import { CONTACT, NAV_ITEMS, RESUME_NAV, SITE, SOCIALS } from '../content'
 import {
   IconBriefcase,
   IconClock,
+  IconFileText,
   IconGitHub,
   IconHome,
   IconLinkedIn,
@@ -54,6 +55,15 @@ export function Sidebar() {
               </a>
             )
           })}
+        </nav>
+        <nav aria-label="Documents" className="mt-2 flex flex-col gap-0.5 border-t border-line pt-2">
+          <a
+            href={RESUME_NAV.href}
+            className="flex items-center gap-3 px-5 py-3 text-xs font-medium uppercase tracking-[0.07em] text-muted transition-colors hover:text-accent"
+          >
+            <IconFileText className="h-[15px] w-[15px] shrink-0" />
+            <span>{RESUME_NAV.label}</span>
+          </a>
         </nav>
       </div>
       <div className="flex gap-3 px-5">

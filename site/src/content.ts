@@ -310,12 +310,41 @@ export const CV_REQUEST_BODY =
 
 // --- Footer ---
 
-export const FOOTER = {
-  tagline: 'Building backend systems that scale.',
-  stack: 'Built with React, TypeScript and Tailwind CSS.',
-  rights: '© 2026 Obed Alemya. All rights reserved.',
-  resumeLink: { label: 'Resume', href: '/resume/' },
-} as const
+/** Standalone resume page link, used in the sidebar navigation. */
+export const RESUME_NAV: LinkItem = { label: 'Resume', href: '/resume/' }
+
+/** simple-icons slugs for skills that have a brand icon. */
+export const SKILL_ICONS: Record<string, string> = {
+  Python: 'python',
+  TypeScript: 'typescript',
+  JavaScript: 'javascript',
+  C: 'c',
+  Django: 'django',
+  Flask: 'flask',
+  FastAPI: 'fastapi',
+  'Node.js': 'nodedotjs',
+  'Express.js': 'express',
+  React: 'react',
+  Redux: 'redux',
+  jQuery: 'jquery',
+  Bootstrap: 'bootstrap',
+  'Tailwind CSS': 'tailwindcss',
+  'ASP.NET Core': 'dotnet',
+  PostgreSQL: 'postgresql',
+  MySQL: 'mysql',
+  MongoDB: 'mongodb',
+  SQLite: 'sqlite',
+  Docker: 'docker',
+  'GitHub Actions': 'githubactions',
+  Nginx: 'nginx',
+  Puppet: 'puppet',
+  Linux: 'linux',
+  Git: 'git',
+  Firebase: 'firebase',
+  RabbitMQ: 'rabbitmq',
+  Celery: 'celery',
+  Sphinx: 'sphinx',
+}
 
 // --- Resume page ---
 

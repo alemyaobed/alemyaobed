@@ -1,7 +1,6 @@
 import { CONTACT, HERO, SOCIALS } from '../content'
 import { cvRequestHref } from '../utils'
 import { IconGitHub, IconLinkedIn } from './icons'
-import { Section } from './Section'
 
 /** Map from social label to its brand icon component. */
 const SOCIAL_ICONS: Record<string, typeof IconGitHub> = {
@@ -10,14 +9,17 @@ const SOCIAL_ICONS: Record<string, typeof IconGitHub> = {
 }
 
 /**
- * The closing call-to-action band: heading, lead, the email button,
- * the CV button and contact icon buttons, all centered.
+ * The closing call-to-action band: a deliberately centered exception in
+ * the otherwise left-aligned page, like the reference.
  * @returns The contact section element.
  */
 export function Contact() {
   return (
-    <Section id="contact" title={CONTACT.heading} subtitle={CONTACT.lead}>
-      <div className="flex flex-wrap items-center justify-center gap-4">
+    <section id="contact" className="border-b border-line px-5 py-20 text-center">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-2 tracking-tight">{CONTACT.heading}</h2>
+        <p className="m-0 text-sm text-muted">{CONTACT.lead}</p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
         <a
           href={`mailto:${CONTACT.email}`}
           className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
@@ -45,7 +47,8 @@ export function Contact() {
             </a>
           )
         })}
+        </div>
       </div>
-    </Section>
+    </section>
   )
 }

@@ -1,13 +1,13 @@
-import { FOOTER, NAV_ITEMS } from '../content'
+import { NAV_ITEMS, SITE } from '../content'
 
 /**
- * Site footer with the section links, tagline and copyright, centered
- * like the reference.
+ * The minimal footer: section links and a copyright line whose year is
+ * computed from the clock so it never goes stale.
  * @returns The footer element.
  */
 export function Footer() {
   return (
-    <footer className="border-t border-line px-5 py-10 text-center">
+    <footer className="border-t border-line px-5 py-10">
       <nav aria-label="Footer" className="mb-4">
         <ul className="m-0 flex list-none flex-wrap justify-center gap-5 p-0">
           {NAV_ITEMS.map((item) => (
@@ -19,14 +19,9 @@ export function Footer() {
           ))}
         </ul>
       </nav>
-      <p className="m-0 text-ink">{FOOTER.tagline}</p>
-      <p className="mt-2 text-sm text-muted">
-        <a href={FOOTER.resumeLink.href} className="text-accent hover:underline">
-          {FOOTER.resumeLink.label}
-        </a>{' '}
-        · {FOOTER.stack}
+      <p className="m-0 text-sm text-muted">
+        © {new Date().getFullYear()} {SITE.name}. All rights reserved.
       </p>
-      <p className="mt-4 text-sm text-muted">{FOOTER.rights}</p>
     </footer>
   )
 }
