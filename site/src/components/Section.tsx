@@ -13,16 +13,16 @@ export interface SectionProps {
 }
 
 /**
- * Wraps a page section with its anchor, centered heading and shared
- * spacing, matching the reference's centered layout.
+ * Wraps a page section with its anchor, left-aligned heading and
+ * shared spacing, with the content in a centered column.
  * @param props - The section id, heading, optional subtitle and content.
  * @returns The section element.
  */
 export function Section({ id, title, subtitle, children }: SectionProps) {
   return (
     <section id={id} className="border-b border-line px-5 py-16">
-      <div className="mx-auto max-w-4xl text-center">
-        <h2 className="mb-2 tracking-tight">{title}</h2>
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-1 tracking-tight">{title}</h2>
         {subtitle && <p className="m-0 text-sm text-muted">{subtitle}</p>}
         <div className="mt-8">{children}</div>
       </div>

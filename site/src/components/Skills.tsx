@@ -1,9 +1,9 @@
-import { SKILL_GROUPS, SKILLS_HEADING } from '../content'
+import { SKILL_GROUPS, SKILL_ICONS, SKILLS_HEADING } from '../content'
 import { Section } from './Section'
 
 /**
- * Skills rendered as the reference's chip grid, grouped under subtle
- * labels with everything centered.
+ * Skills as left-flowing chips, each carrying its brand icon from
+ * simple-icons where one exists.
  * @returns The skills section element.
  */
 export function Skills() {
@@ -15,15 +15,28 @@ export function Skills() {
             <p className="m-0 font-mono text-xs uppercase tracking-widest text-accent">
               {group.label}
             </p>
-            <ul className="mt-3 flex list-none flex-wrap justify-center gap-2 p-0">
-              {group.skills.map((skill) => (
-                <li
-                  key={skill}
-                  className="rounded-full border border-line bg-pill px-3 py-1.5 text-sm text-muted"
-                >
-                  {skill}
-                </li>
-              ))}
+            <ul className="mt-3 flex list-none flex-wrap gap-2 p-0">
+              {group.skills.map((skill) => {
+                const slug = SKILL_ICONS[skill]
+                return (
+                  <li
+                    key={skill}
+                    className="flex items-center gap-2 rounded-full border border-line bg-pill px-3 py-1.5 text-sm text-muted"
+                  >
+                    {slug && (
+                      <img
+                        src={`https://cdn.simpleicons.org/${slug}/9ca3af`}
+                        alt=""
+                        width={16}
+                        height={16}
+                        loading="lazy"
+                        className="h-4 w-4"
+                      />
+                    )}
+                    {skill}
+                  </li>
+                )
+              })}
             </ul>
           </div>
         ))}
