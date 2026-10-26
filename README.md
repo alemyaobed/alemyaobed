@@ -70,8 +70,8 @@ A few things that shape how I work: a First Class BSc in Computer Science from K
 ### Stats
 
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alemyaobed&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact&card_width=382" alt="top languages" width="49%">
-    <img src="https://github-readme-stats.vercel.app/api?username=alemyaobed&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&card_width=450" alt="GitHub stats with rank" width="49%">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alemyaobed&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&layout=compact&card_width=382&cache_seconds=86400" alt="top languages" width="49%">
+    <img src="https://github-readme-stats.vercel.app/api?username=alemyaobed&theme=highcontrast&show_border=false&include_all_commits=true&count_private=true&card_width=450&cache_seconds=86400" alt="GitHub stats with rank" width="49%">
 </div>
 
 <div align="center">
