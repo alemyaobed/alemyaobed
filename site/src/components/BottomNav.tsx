@@ -31,6 +31,7 @@ export function BottomNav() {
   return (
     <nav
       aria-label="Primary"
+      style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
       className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-6 border-t border-line bg-page/95 backdrop-blur-lg lg:hidden"
     >
       {NAV_ITEMS.map((item) => {

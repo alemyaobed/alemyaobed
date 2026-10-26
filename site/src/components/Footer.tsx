@@ -12,7 +12,10 @@ export function Footer() {
         <ul className="m-0 flex list-none flex-wrap justify-center gap-5 p-0">
           {NAV_ITEMS.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="text-sm text-muted hover:text-ink">
+              <a
+                href={item.href}
+                className="inline-block py-2.5 text-sm text-muted transition-colors hover:text-ink"
+              >
                 {item.label}
               </a>
             </li>
