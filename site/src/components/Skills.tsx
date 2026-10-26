@@ -25,7 +25,7 @@ export function Skills() {
                   >
                     {slug && (
                       <img
-                        src={`https://cdn.simpleicons.org/${slug}/9ca3af`}
+                        src={`https://cdn.simpleicons.org/${slug}`}
                         alt=""
                         width={16}
                         height={16}

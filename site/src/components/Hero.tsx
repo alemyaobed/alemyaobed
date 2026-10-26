@@ -31,7 +31,7 @@ export function Hero() {
           </a>
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <span className="rounded-full border border-accent/50 bg-accent/10 px-3 py-1 text-sm text-accent">
+          <span className="rounded-full border border-emerald-500/50 bg-emerald-500/10 px-3 py-1 text-sm text-emerald-500 dark:text-emerald-400">
             {SITE.availability}
           </span>
         </div>
