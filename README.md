@@ -3,10 +3,10 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=alemyaobed&label=PROFILE+VIEWS&color=aa3bff&style=flat" alt="profile views">
   <br>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=AA3BFF&center=true&vCenter=true&width=600&lines=Software+Engineer;Backend+systems+and+APIs;Working+toward+Data+Science" alt="Software Engineer, Backend systems and APIs, Working toward Data Science">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=AA3BFF&center=true&vCenter=true&width=600&lines=Software+Engineer;Backend+Systems;Cloud+Infrastructure" alt="Software Engineer, Backend Systems, Cloud Infrastructure">
 </div>
 
-Software engineer based in Kumasi, Ghana. Most of my work lives on the backend: APIs in Python and Node.js, data in PostgreSQL and MongoDB, shipped with Docker and GitHub Actions. Lately I have been working close to AI systems and cloud infrastructure, and I am steadily steering toward data science.
+Software engineer based in Kumasi, Ghana. Most of my work lives on the backend: APIs in Python and Node.js, data in PostgreSQL and MongoDB, shipped with Docker and GitHub Actions. Most recently I led the migration of a production stack from AWS to low-cost infrastructure on Render.
 
 A few things that shape how I work: a First Class BSc in Computer Science from KNUST, the ALX Software Engineering Program, and a habit of automating the boring parts, like the Playwright suites that cut deployment errors by 20% on a production app.
 
