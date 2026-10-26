@@ -7,7 +7,7 @@ import { STATS } from '../content'
  */
 export function Stats() {
   return (
-    <section className="border-t border-line px-5 py-12">
+    <section className="border-b border-line px-5 py-12">
       <dl className="mx-auto grid max-w-4xl grid-cols-2 gap-8 text-center md:grid-cols-4">
         {STATS.map((stat) => (
           <div key={stat.label}>
