@@ -197,6 +197,9 @@ export const SKILL_GROUPS: SkillGroup[] = [
       'Node.js',
       'Express.js',
       'React',
+      'Redux',
+      'jQuery',
+      'Bootstrap',
       'Tailwind CSS',
       'ASP.NET Core',
     ],
@@ -204,7 +207,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
   { label: 'Data', skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'SQLite', 'MSSQL'] },
   {
     label: 'Cloud & DevOps',
-    skills: ['AWS', 'Docker', 'GitHub Actions', 'Nginx', 'HAProxy', 'Linux', 'Git'],
+    skills: ['AWS', 'Docker', 'GitHub Actions', 'Nginx', 'HAProxy', 'Puppet', 'Certbot', 'Linux', 'Git'],
   },
   {
     label: 'Practices & tooling',
