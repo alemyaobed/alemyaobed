@@ -3,15 +3,14 @@ import { cvRequestHref } from '../utils'
 import { Section } from './Section'
 
 /**
- * Closing call to action with the email button, the Request CV button
- * and the social pills.
+ * The closing call-to-action band: heading, lead, the email button and
+ * the social pills, all centered like the reference.
  * @returns The contact section element.
  */
 export function Contact() {
   return (
-    <Section id="contact" title={CONTACT.heading}>
-      <p className="m-0 max-w-xl text-muted">{CONTACT.lead}</p>
-      <div className="mt-8 flex flex-wrap items-center gap-4">
+    <Section id="contact" title={CONTACT.heading} subtitle={CONTACT.lead}>
+      <div className="flex flex-wrap items-center justify-center gap-4">
         <a
           href={`mailto:${CONTACT.email}`}
           className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
@@ -20,7 +19,7 @@ export function Contact() {
         </a>
         <a
           href={cvRequestHref()}
-          className="rounded-full border border-line px-6 py-3 text-sm text-ink transition-colors hover:border-accent/50 hover:text-accent"
+          className="rounded-full border border-accent/50 bg-accent/10 px-6 py-3 text-sm text-accent transition-colors hover:bg-accent/20"
         >
           {HERO.requestCvCta}
         </a>

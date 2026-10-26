@@ -8,6 +8,8 @@ import type {
   ResumeRole,
   ResumeSkills,
   SkillGroup,
+  Stat,
+  ValueProp,
 } from './types'
 
 // --- Identity ---
@@ -39,7 +41,35 @@ export const NAV_ITEMS: LinkItem[] = [
 export const HERO = {
   viewWorkCta: 'View my work',
   requestCvCta: 'Request CV',
+  portraitAlt: 'Portrait of Obed Alemya',
+  portraitSrc: '/avatar-256.png',
 } as const
+
+// --- Stats bar ---
+
+/** Highlight numbers under the hero, each traced to evidence. */
+export const STATS: Stat[] = [
+  { value: '3+', label: 'Years of experience' },
+  { value: '85%', label: 'Cloud cost reduction' },
+  { value: '20%', label: 'Fewer deployment errors' },
+  { value: '48', label: 'Public repositories' },
+]
+
+/** The three-line working story shown as columns. */
+export const VALUE_PROPS: ValueProp[] = [
+  {
+    title: 'Build',
+    text: 'Backend systems, APIs and real-time features that hold up in production.',
+  },
+  {
+    title: 'Ship',
+    text: 'CI/CD, Playwright tests and cost-aware infrastructure around everything I build.',
+  },
+  {
+    title: 'Measure',
+    text: 'Numbers before claims: evaluation harnesses, retention analytics, cost tracking.',
+  },
+]
 
 export const CODE_CARD_TITLE = 'engineer.js'
 

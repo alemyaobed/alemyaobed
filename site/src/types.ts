@@ -50,3 +50,15 @@ export interface ResumeSkills {
   label: string
   items: string[]
 }
+
+/** A single highlight number in the stats bar. */
+export interface Stat {
+  value: string
+  label: string
+}
+
+/** One of the three value propositions under the stats bar. */
+export interface ValueProp {
+  title: string
+  text: string
+}
