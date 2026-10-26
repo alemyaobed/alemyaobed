@@ -270,7 +270,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     title: 'Software Engineer, Cloud & Infrastructure',
     organization: 'Amazéthu (Remote)',
     description:
-      'Led a project assessing our production infrastructure and its cost: documented the AWS estate, researched and compared providers, and executed the phased migration to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow, DNS and SSL cutover, and end-to-end validation. Beyond infrastructure, I have twice run the team hiring end to end, from designing the candidate questionnaire through filtering 90 applicants to technical interviews, and I have built the product retention analytics.',
+      'Led a project assessing our production infrastructure and its cost: documented the AWS estate, researched and compared providers, and executed the phased migration to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow, DNS and SSL cutover, and end-to-end validation. Beyond infrastructure, I ran the team hiring round of 2025 end to end, from job ads and SmartRecruiter screening through technical and behavioral interviews, and I now lead the second round, from the questionnaire sent to 90 applicants to interview preparation, alongside the product retention analytics.',
   },
   {
     period: 'Apr 2025 - Jan 2026',
@@ -394,7 +394,7 @@ export const RESUME_ROLES: ResumeRole[] = [
       'Led a project assessing the production infrastructure and its cost: documented the AWS estate, built the provider comparison and decision framework, and executed the phased migration to Render (heaviest service first) with tag-based GitHub Actions deploys, DNS and SSL cutover, and end-to-end validation.',
       'Runs staging and production at roughly one sixth of the previous AWS cost, balancing cost against spin-up latency with a keep-warm setup and explicit trade-off notes.',
       'Built evaluation systems for the LLM tutor: a local testbed with simulated students, content review pipelines and quality control workflows.',
-      'Directs hiring strategy (questionnaire to 90 candidates, two-stage filtering, interviews) and retention analytics; found and fixed a signup event design flaw.',
+      'Ran the team hiring round of 2025 end to end (job ads, SmartRecruiter screening, technical and behavioral interviews) and now leads the second round (questionnaire to 90 candidates, two-stage filtering); also built the retention analytics and fixed a signup event design flaw.',
     ],
   },
   {
