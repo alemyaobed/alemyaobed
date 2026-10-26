@@ -165,24 +165,11 @@ export const WORK_VIEW_ALL: LinkItem = {
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Automated Fish Feeder System',
+    title: 'Craftsman Locator',
     description:
-      'IoT final-year project: a sensor-driven control system for feeding and water management that cut manual labor by about 40% on small-scale farms.',
-    tags: ['IoT', 'Automation', 'Sensors'],
-  },
-  {
-    title: 'cu.rl',
-    description:
-      'URL shortener with platform, OS and location analytics. Django, DRF and PostgreSQL.',
-    tags: ['Django', 'DRF', 'PostgreSQL'],
-    href: 'https://github.com/alemyaobed/cu.rl',
-  },
-  {
-    title: 'Inventory Management System',
-    description:
-      'Stock-level tracking service built with FastAPI and PostgreSQL.',
-    tags: ['FastAPI', 'PostgreSQL', 'Python'],
-    href: 'https://github.com/alemyaobed/Inventory_Management_System',
+      'A live product: find shops and craftsmen in Sunyani, Ghana. Deployed and running in production on a custom domain.',
+    tags: ['TypeScript', 'Vite', 'Vercel'],
+    href: 'https://craftsmangh.com',
   },
   {
     title: 'Real-Time Chat Application',
@@ -192,6 +179,13 @@ export const PROJECTS: Project[] = [
     href: 'https://github.com/alemyaobed/Real-Time_Chat_Application',
   },
   {
+    title: 'cu.rl',
+    description:
+      'URL shortener with platform, OS and location analytics. Django, DRF and PostgreSQL.',
+    tags: ['Django', 'DRF', 'PostgreSQL'],
+    href: 'https://github.com/alemyaobed/cu.rl',
+  },
+  {
     title: 'Pocket Bank',
     description:
       'Banking app with Django REST: accounts, transactions, loans and financial reporting.',
@@ -199,11 +193,17 @@ export const PROJECTS: Project[] = [
     href: 'https://github.com/alemyaobed/Pocket_Bank',
   },
   {
-    title: 'Billable Hours Invoicing',
+    title: 'Automated Fish Feeder System',
     description:
-      'Web app that generates invoices from employee timesheets based on billable hours.',
-    tags: ['Django', 'Python'],
-    href: 'https://github.com/alemyaobed/billable-hours-invoicing',
+      'IoT final-year project: a sensor-driven control system for feeding and water management that cut manual labor by about 40% on small-scale farms.',
+    tags: ['IoT', 'Automation', 'Sensors'],
+  },
+  {
+    title: 'Inventory Management System',
+    description:
+      'Stock-level tracking service built with FastAPI and PostgreSQL.',
+    tags: ['FastAPI', 'PostgreSQL', 'Python'],
+    href: 'https://github.com/alemyaobed/Inventory_Management_System',
   },
   {
     title: 'Airbnb Clone',

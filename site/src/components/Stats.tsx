@@ -12,7 +12,9 @@ export function Stats() {
         {STATS.map((stat) => (
           <div key={stat.label}>
             <dt className="sr-only">{stat.label}</dt>
-            <dd className="m-0 text-3xl font-medium text-ink">{stat.value}</dd>
+            <dd className="m-0 text-3xl font-medium text-emerald-500 dark:text-emerald-400">
+              {stat.value}
+            </dd>
             <p className="m-0 mt-1 text-sm text-muted">{stat.label}</p>
           </div>
         ))}
