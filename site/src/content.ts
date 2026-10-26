@@ -15,11 +15,11 @@ export const SITE = {
   shortName: 'obed',
   role: 'Software Engineer',
   location: 'Kumasi, Ghana',
-  greeting: "👋 Hello, I'm",
+  greeting: "Hello, I'm",
   tagline:
-    'I build scalable backend systems, APIs and real-time applications — engineering today, data science tomorrow.',
+    'I build scalable backend systems, APIs and real-time applications, and I am working my way toward data science.',
   availability: 'Open to opportunities',
-  pageTitle: 'Obed Alemya — Software Engineer',
+  pageTitle: 'Obed Alemya, Software Engineer',
 } as const
 
 // --- Navigation ---
@@ -121,7 +121,7 @@ export const ABOUT = {
   heading: 'About',
   paragraphs: [
     "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. Most recently I was a Junior Software Engineer at Amazéthu, building features across React, Node.js/Express and FastAPI, and driving QA automation with Playwright that cut deployment errors by 20%.",
-    'Before that, at KNUST University IT Services, I built TekNotify — a Django, RabbitMQ and Celery bulk-messaging system with Paystack payments — plus a C#/ASP.NET endowment system, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with AWS, Docker and GitHub Actions.',
+    'Before that, at KNUST University IT Services, I built TekNotify, a Django, RabbitMQ and Celery bulk-messaging system with Paystack payments, plus a C#/ASP.NET endowment system, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with AWS, Docker and GitHub Actions.',
     "Software engineer today, data scientist in the making: I've been working around AI-powered systems and cloud infrastructure, and I'm steadily building toward data science and analytics.",
   ],
 } as const
@@ -204,7 +204,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
   { label: 'Data', skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'SQLite', 'MSSQL'] },
   {
     label: 'Cloud & DevOps',
-    skills: ['AWS', 'Docker', 'GitHub Actions', 'Jenkins', 'Nginx', 'HAProxy', 'Linux', 'Git'],
+    skills: ['AWS', 'Docker', 'GitHub Actions', 'Nginx', 'HAProxy', 'Linux', 'Git'],
   },
   {
     label: 'Practices & tooling',
@@ -233,28 +233,21 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
   },
   {
     period: 'Nov 2023 - Dec 2024',
-    title: 'Software Engineer — National Service & ICT Assistant',
+    title: 'Software Engineer, National Service & ICT Assistant',
     organization: 'KNUST University IT Services',
     description:
       'Built TekNotify, a Django, RabbitMQ and Celery bulk-messaging system with Paystack payments; developed a C#/ASP.NET endowment system; modeled databases and wrote stored procedures.',
   },
   {
-    period: 'Oct 2022 - Dec 2022',
-    title: 'ICT Intern',
-    organization: 'GIFEC, Nkoranza',
-    description:
-      'Supported ICT infrastructure for underserved communities and taught web development workshops.',
-  },
-  {
     period: 'Jul 2023 - Aug 2024',
-    title: 'Software Engineering Program — Backend',
+    title: 'Software Engineering Program, Backend',
     organization: 'ALX (Holberton affiliated)',
     description:
       'Twelve-month intensive programme; ALX-backend portfolio including an Airbnb clone with Nginx, Puppet, Certbot and Datadog.',
   },
   {
     period: '2019 - 2023',
-    title: 'BSc Computer Science — First Class',
+    title: 'BSc Computer Science, First Class',
     organization: 'KNUST',
     description: 'Kwame Nkrumah University of Science and Technology, Kumasi.',
   },
@@ -274,7 +267,7 @@ export const SOCIALS: LinkItem[] = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alemyaobed/' },
 ]
 
-export const CV_REQUEST_SUBJECT = 'CV request — Obed Alemya'
+export const CV_REQUEST_SUBJECT = 'CV request for Obed Alemya'
 export const CV_REQUEST_BODY =
   'Hi Obed,\n\nI found your portfolio and would like to request your CV.\n\n'
 
