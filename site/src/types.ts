@@ -36,3 +36,17 @@ export interface ExperienceEntry {
   organization: string
   description: string
 }
+
+/** A role on the resume page with its own bullet list. */
+export interface ResumeRole {
+  period: string
+  title: string
+  organization: string
+  bullets: string[]
+}
+
+/** A labelled skills row on the resume page. */
+export interface ResumeSkills {
+  label: string
+  items: string[]
+}

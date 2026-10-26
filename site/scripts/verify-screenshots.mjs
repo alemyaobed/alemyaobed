@@ -71,13 +71,15 @@ async function main() {
     await waitForServer(`http://localhost:${PORT}`)
     const browser = await chromium.launch({ executablePath: findChromium() })
     const page = await browser.newPage()
-    for (const viewport of VIEWPORTS) {
-      await page.setViewportSize({ width: viewport.width, height: viewport.height })
-      await page.goto(`http://localhost:${PORT}`, { waitUntil: 'networkidle' })
-      await page.screenshot({
-        path: join(OUT_DIR, `${viewport.name}.png`),
-        fullPage: true,
-      })
+    for (const path of ['/', '/resume/']) {
+      for (const viewport of VIEWPORTS) {
+        await page.setViewportSize({ width: viewport.width, height: viewport.height })
+        await page.goto(`http://localhost:${PORT}${path}`, { waitUntil: 'networkidle' })
+        await page.screenshot({
+          path: join(OUT_DIR, `${path === '/' ? 'home' : 'resume'}-${viewport.name}.png`),
+          fullPage: true,
+        })
+      }
     }
     await browser.close()
     console.log(`Screenshots written to ${OUT_DIR}`)
