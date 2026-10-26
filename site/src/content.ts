@@ -220,7 +220,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     title: 'Software Engineer, Cloud & Infrastructure',
     organization: 'Amazéthu (Remote)',
     description:
-      'Led the low-cost infrastructure project: researched and compared free-tier providers, then planned and executed the phased migration of the production stack from AWS to Render (heaviest service first: botai, then be-app and fe-web), with tag-based GitHub Actions deploys, a keep-warm workflow for free-tier services, DNS and SSL cutover, and end-to-end validation. Also directs hiring strategy and retention analytics.',
+      'Led the low-cost infrastructure project: researched and compared free-tier providers, then planned and executed the phased migration of the production stack from AWS to Render, starting with the most resource-intensive service, with tag-based GitHub Actions deploys, a keep-warm workflow for free-tier services, DNS and SSL cutover, and end-to-end validation. Also directs hiring strategy and retention analytics.',
   },
   {
     period: 'Apr 2025 - Jan 2026',
