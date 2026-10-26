@@ -82,4 +82,4 @@ A few things that shape how I work: a First Class BSc in Computer Science from K
 
 [LinkedIn](https://www.linkedin.com/in/alemyaobed/) · [GitHub](https://github.com/alemyaobed) · [alemyaobed@gmail.com](mailto:alemyaobed@gmail.com)
 
-<!-- Add the live portfolio link here once deployment is approved -->
+Portfolio: [alemyaobed.vercel.app](https://alemyaobed.vercel.app) · Resume: [alemyaobed.vercel.app/resume](https://alemyaobed.vercel.app/resume)
