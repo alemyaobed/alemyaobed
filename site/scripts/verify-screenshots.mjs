@@ -13,10 +13,14 @@ const PORT = 4173
 /** Directory screenshots are written to. */
 const OUT_DIR = join(process.cwd(), 'verification')
 
-/** Viewports captured: a real phone width and a desktop width. */
+/** Viewports captured: small phones through wide desktop. */
 const VIEWPORTS = [
-  { name: 'phone-390x844', width: 390, height: 844 },
-  { name: 'desktop-1280x800', width: 1280, height: 800 },
+  { name: 's320', width: 320, height: 660 },
+  { name: 'phone390', width: 390, height: 844 },
+  { name: 'tablet768', width: 768, height: 1024 },
+  { name: 'lg1024', width: 1024, height: 768 },
+  { name: 'desktop1280', width: 1280, height: 800 },
+  { name: 'wide1536', width: 1536, height: 900 },
 ]
 
 /**

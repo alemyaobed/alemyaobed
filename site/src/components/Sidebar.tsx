@@ -1,8 +1,10 @@
-import { CONTACT, NAV_ITEMS, SITE } from '../content'
+import { CONTACT, NAV_ITEMS, SITE, SOCIALS } from '../content'
 import {
   IconBriefcase,
   IconClock,
+  IconGitHub,
   IconHome,
+  IconLinkedIn,
   IconMail,
   IconUser,
   IconWrench,
@@ -20,10 +22,14 @@ const SECTION_ICONS: Record<string, ComponentType<IconProps>> = {
   '#contact': IconMail,
 }
 
+/** Shared classes for the small round contact icon buttons. */
+const ICON_BUTTON =
+  'inline-flex items-center justify-center rounded-full border border-line p-2 text-muted transition-colors hover:border-accent/50 hover:text-accent'
+
 /**
  * The fixed left sidebar shown on desktop, following the reference:
  * identity block, vertical icon-and-label links with uppercase tracked
- * text, and the email at the bottom.
+ * text, and contact icon buttons at the bottom.
  * @returns The sidebar element.
  */
 export function Sidebar() {
@@ -50,11 +56,29 @@ export function Sidebar() {
           })}
         </nav>
       </div>
-      <p className="m-0 px-5 text-xs text-muted">
-        <a href={`mailto:${CONTACT.email}`} className="hover:text-accent">
-          {CONTACT.email}
+      <div className="flex gap-3 px-5">
+        <a href={`mailto:${CONTACT.email}`} aria-label="Email" className={ICON_BUTTON}>
+          <IconMail className="h-4 w-4" />
         </a>
-      </p>
+        <a
+          href={SOCIALS[0]?.href ?? '#'}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          className={ICON_BUTTON}
+        >
+          <IconGitHub className="h-4 w-4" />
+        </a>
+        <a
+          href={SOCIALS[1]?.href ?? '#'}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          className={ICON_BUTTON}
+        >
+          <IconLinkedIn className="h-4 w-4" />
+        </a>
+      </div>
     </aside>
   )
 }
