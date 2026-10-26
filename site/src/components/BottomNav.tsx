@@ -1,0 +1,49 @@
+import { NAV_ITEMS } from '../content'
+import {
+  IconBriefcase,
+  IconClock,
+  IconHome,
+  IconMail,
+  IconUser,
+  IconWrench,
+} from './icons'
+import type { ComponentType } from 'react'
+import type { IconProps } from './icons'
+
+/** Icon lookup keyed by navigation href. */
+const SECTION_ICONS: Record<string, ComponentType<IconProps>> = {
+  '#home': IconHome,
+  '#about': IconUser,
+  '#work': IconBriefcase,
+  '#skills': IconWrench,
+  '#experience': IconClock,
+  '#contact': IconMail,
+}
+
+/**
+ * The fixed bottom tab bar shown on mobile only, mirroring the
+ * reference's mobile navigation.
+ * @returns The bottom tab bar element.
+ */
+export function BottomNav() {
+  return (
+    <nav
+      aria-label="Primary"
+      className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-6 border-t border-line bg-page/95 backdrop-blur-lg lg:hidden"
+    >
+      {NAV_ITEMS.map((item) => {
+        const Icon = SECTION_ICONS[item.href] ?? IconHome
+        return (
+          <a
+            key={item.href}
+            href={item.href}
+            className="flex flex-col items-center gap-1 py-2.5 text-[0.6rem] font-medium uppercase tracking-wider text-muted transition-colors hover:text-accent"
+          >
+            <Icon className="h-4 w-4" />
+            <span>{item.label}</span>
+          </a>
+        )
+      })}
+    </nav>
+  )
+}
