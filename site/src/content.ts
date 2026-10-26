@@ -16,8 +16,7 @@ export const SITE = {
   role: 'Software Engineer',
   location: 'Kumasi, Ghana',
   greeting: "Hello, I'm",
-  tagline:
-    'I build scalable backend systems, APIs and real-time applications, and I am working my way toward data science.',
+  tagline: 'I build scalable backend systems, APIs and real-time applications.',
   availability: 'Open to opportunities',
   pageTitle: 'Obed Alemya, Software Engineer',
 } as const
@@ -95,17 +94,14 @@ export const CODE_CARD_LINES: CodeLine[] = [
   ],
   [
     { text: '  cloud: [', tone: 'plain' },
+    { text: "'Render'", tone: 'string' },
+    { text: ', ', tone: 'plain' },
     { text: "'AWS'", tone: 'string' },
     { text: ', ', tone: 'plain' },
     { text: "'Docker'", tone: 'string' },
     { text: ', ', tone: 'plain' },
     { text: "'GitHub Actions'", tone: 'string' },
     { text: '],', tone: 'plain' },
-  ],
-  [
-    { text: '  next: ', tone: 'plain' },
-    { text: "'data science'", tone: 'string' },
-    { text: ',', tone: 'plain' },
   ],
   [
     { text: '  openToWork: ', tone: 'plain' },
@@ -120,9 +116,8 @@ export const CODE_CARD_LINES: CodeLine[] = [
 export const ABOUT = {
   heading: 'About',
   paragraphs: [
-    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. At Amazéthu I grew from intern to junior engineer to my current role in cloud and infrastructure, where I own cost optimization and platform decisions on a production AWS estate.",
-    'Along the way I drove QA automation with Playwright that cut deployment errors by 20%, built TekNotify (Django, RabbitMQ, Celery) at KNUST University IT Services, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with AWS, Docker and GitHub Actions.',
-    "Software engineer today, data scientist in the making: I've been working around AI-powered systems and cloud infrastructure, and I'm steadily building toward data science and analytics.",
+    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. At Amazéthu I grew from intern to junior engineer to my current role in cloud and infrastructure, where I led the migration of our production stack from AWS to low-cost infrastructure on Render.",
+    'Along the way I drove QA automation with Playwright that cut deployment errors by 20%, built TekNotify (Django, RabbitMQ, Celery) at KNUST University IT Services, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with GitHub Actions and Docker.',
   ],
 } as const
 
@@ -225,7 +220,7 @@ export const EXPERIENCE_ENTRIES: ExperienceEntry[] = [
     title: 'Software Engineer, Cloud & Infrastructure',
     organization: 'Amazéthu (Remote)',
     description:
-      'Own the low-cost infrastructure project: mapped the production AWS estate (ECS Fargate, ECR, S3, CloudWatch, API Gateway), drove cost optimization that reduced the monthly bill, authored the cloud migration analysis and validated new Render infrastructure. Also direct hiring strategy and retention analytics.',
+      'Led the low-cost infrastructure project: researched and compared free-tier providers, then planned and executed the phased migration of the production stack from AWS to Render (heaviest service first: botai, then be-app and fe-web), with tag-based GitHub Actions deploys, a keep-warm workflow for free-tier services, DNS and SSL cutover, and end-to-end validation. Also directs hiring strategy and retention analytics.',
   },
   {
     period: 'Apr 2025 - Jan 2026',
@@ -284,7 +279,7 @@ export const CV_REQUEST_BODY =
 // --- Footer ---
 
 export const FOOTER = {
-  tagline: 'Engineering today, data science tomorrow.',
+  tagline: 'Building backend systems that scale.',
   stack: 'Built with React, TypeScript and Tailwind CSS.',
   rights: '© 2026 Obed Alemya. All rights reserved.',
 } as const
