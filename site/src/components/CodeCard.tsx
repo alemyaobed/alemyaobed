@@ -87,7 +87,10 @@ export function CodeCard() {
             {CODE_CARD_TITLE}
           </figcaption>
         </div>
-        <div className="overflow-x-auto px-4 py-4 text-left">
+        <div
+          className="overflow-x-auto px-4 py-4 text-left"
+          style={{ minHeight: `${CODE_CARD_LINES.length * 24 + 32}px` }}
+        >
           {CODE_CARD_LINES.map((line, lineIndex) => (
             <p
               key={lineIndex}
@@ -114,7 +117,7 @@ export function CodeCard() {
           )}
         </div>
       </div>
-      <p className="mt-6 rounded-lg border border-accent/50 bg-accent/10 px-4 py-3 text-center text-sm text-accent">
+      <p className="mt-8 rounded-lg border border-accent/50 bg-accent/10 px-4 py-3 text-center text-sm text-accent">
         {CODE_CARD_BANNER}
       </p>
     </figure>

@@ -9,10 +9,10 @@ import { Section } from './Section'
 export function Skills() {
   return (
     <Section id="skills" title={SKILLS_HEADING}>
-      <div className="rounded-xl border border-line p-6 sm:p-8">
-        <div className="grid gap-8 md:grid-cols-2">
+      <div className="rounded-xl border border-line p-4 sm:p-6">
+        <div className="grid gap-4 md:grid-cols-2">
           {SKILL_GROUPS.map((group) => (
-            <div key={group.label}>
+            <div key={group.label} className="rounded-lg border border-line p-4 sm:p-5">
               <p className="m-0 font-mono text-sm text-accent">
                 {`[ ${group.label} ]`}
               </p>
