@@ -178,6 +178,25 @@ export function IconChart({ className }: IconProps) {
   )
 }
 
+/** Close icon for the open hamburger state. */
+export function IconX({ className }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
+    </svg>
+  )
+}
+
 /** Sun icon for the light theme toggle state. */
 export function IconSun({ className }: IconProps) {
   return (

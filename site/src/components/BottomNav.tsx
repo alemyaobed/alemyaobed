@@ -27,7 +27,7 @@ const SECTION_ICONS: Record<string, ComponentType<IconProps>> = {
  * @returns The bottom tab bar element.
  */
 export function BottomNav() {
-  const active = useActiveSection(NAV_ITEMS.map((item) => item.href))
+  const [active, setActive] = useActiveSection(NAV_ITEMS.map((item) => item.href))
   return (
     <nav
       aria-label="Primary"
@@ -41,6 +41,7 @@ export function BottomNav() {
           <a
             key={item.href}
             href={item.href}
+            onClick={() => setActive(item.href)}
             aria-current={isActive ? 'page' : undefined}
             className={`flex flex-col items-center gap-1 py-2.5 text-[0.6rem] font-medium uppercase tracking-wider transition-colors ${
               isActive ? 'text-accent' : 'text-muted hover:text-accent'

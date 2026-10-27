@@ -1,38 +1,39 @@
 import { useEffect, useState } from 'react'
 
 /**
- * Tracks which page section is currently in view so navigation can
- * highlight it. The observer treats the middle band of the viewport as
- * the active zone, which keeps the highlight stable while scrolling.
+ * Tracks which page section is current, deterministically: a section is
+ * active once its top passes a third of the viewport, so short first and
+ * last sections register reliably. Returns the active href and a setter
+ * so navigation clicks can update it immediately.
  * @param hrefs - Section anchors to watch, for example '#home'.
- * @returns The href of the section currently in view.
+ * @returns The active href and its setter, as a tuple.
  */
-export function useActiveSection(hrefs: string[]): string {
+export function useActiveSection(hrefs: string[]): [string, (href: string) => void] {
   const [active, setActive] = useState(hrefs[0] ?? '')
 
   useEffect(() => {
     /**
-     * Marks the first intersecting section as active.
-     * @param entries - Observer entries for the watched sections.
+     * Computes the current section from scroll position.
      */
-    const handleIntersect = (entries: IntersectionObserverEntry[]) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          setActive(`#${entry.target.id}`)
+    const handleScroll = () => {
+      const mark = window.scrollY + window.innerHeight * 0.35
+      let current = hrefs[0] ?? ''
+      for (const href of hrefs) {
+        const element = document.querySelector(href)
+        if (!element) {
+          continue
+        }
+        const top = element.getBoundingClientRect().top + window.scrollY
+        if (top <= mark) {
+          current = href
         }
       }
+      setActive(current)
     }
-    const observer = new IntersectionObserver(handleIntersect, {
-      rootMargin: '-20% 0px -60% 0px',
-    })
-    for (const href of hrefs) {
-      const element = document.querySelector(href)
-      if (element) {
-        observer.observe(element)
-      }
-    }
-    return () => observer.disconnect()
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [hrefs])
 
-  return active
+  return [active, setActive]
 }

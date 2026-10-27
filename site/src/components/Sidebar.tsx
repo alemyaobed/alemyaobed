@@ -35,7 +35,7 @@ const ICON_BUTTON =
  * @returns The sidebar element.
  */
 export function Sidebar() {
-  const active = useActiveSection(NAV_ITEMS.map((item) => item.href))
+  const [active, setActive] = useActiveSection(NAV_ITEMS.map((item) => item.href))
   return (
     <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col justify-between border-r border-line bg-page py-6 lg:flex">
       <div>
@@ -51,6 +51,7 @@ export function Sidebar() {
               <a
                 key={item.href}
                 href={item.href}
+                onClick={() => setActive(item.href)}
                 aria-current={isActive ? 'page' : undefined}
                 className={`relative flex items-center gap-3 px-5 py-3 text-xs font-medium uppercase tracking-[0.07em] transition-colors ${
                   isActive ? 'bg-accent/10 text-accent' : 'text-muted hover:text-accent'
