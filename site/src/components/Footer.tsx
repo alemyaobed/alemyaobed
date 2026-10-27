@@ -7,7 +7,7 @@ import { NAV_ITEMS, SITE } from '../content'
  */
 export function Footer() {
   return (
-    <footer className="border-t border-line px-5 py-10">
+    <footer className="border-t border-line px-5 pb-28 pt-10 lg:pb-10">
       <nav aria-label="Footer" className="mb-4">
         <ul className="m-0 flex list-none flex-wrap justify-center gap-5 p-0">
           {NAV_ITEMS.map((item) => (
