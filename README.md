@@ -1,9 +1,9 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=160&section=header&text=Obed%20Alemya&fontSize=44&color=ea580c&fontAlignY=34" alt="Obed Alemya">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=160&section=header&text=Obed%20Alemya&fontSize=44&color=aa3bff&fontAlignY=34" alt="Obed Alemya">
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=alemyaobed&label=PROFILE+VIEWS&color=ea580c&style=flat" alt="profile views">
+  <img src="https://komarev.com/ghpvc/?username=alemyaobed&label=PROFILE+VIEWS&color=aa3bff&style=flat" alt="profile views">
   <br>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=EA580C&center=true&vCenter=true&width=600&lines=Software+Engineer;Backend+Systems;Cloud+Infrastructure" alt="Software Engineer, Backend Systems, Cloud Infrastructure">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=AA3BFF&center=true&vCenter=true&width=600&lines=Software+Engineer;Backend+Systems;Cloud+Infrastructure" alt="Software Engineer, Backend Systems, Cloud Infrastructure">
 </div>
 
 Software engineer based in Kumasi, Ghana. Most of my work lives on the backend: APIs in Python and Node.js, data in PostgreSQL and MongoDB, shipped with Docker and GitHub Actions. Most recently I led a project that assessed a production estate and its cost, then planned and executed its migration from AWS to Render at a fraction of the spend.
