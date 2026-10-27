@@ -74,7 +74,6 @@ export function CodeCard() {
   }, [inView, total])
 
   let budget = typed
-  const typing = typed < total
 
   return (
     <figure ref={ref} className="m-0 min-w-0 lg:w-full">
@@ -89,7 +88,7 @@ export function CodeCard() {
         </div>
         <div
           className="overflow-x-auto px-4 py-4 text-left"
-          style={{ minHeight: `${CODE_CARD_LINES.length * 24 + 32}px` }}
+          style={{ height: `${CODE_CARD_LINES.length * 24 + 32}px` }}
         >
           {CODE_CARD_LINES.map((line, lineIndex) => (
             <p
@@ -112,12 +111,9 @@ export function CodeCard() {
               </span>
             </p>
           ))}
-          {typing && (
-            <span className="ml-8 inline-block h-4 w-2 animate-pulse bg-accent align-middle" />
-          )}
         </div>
       </div>
-      <p className="mt-8 rounded-lg border border-accent/50 bg-accent/10 px-4 py-3 text-center text-sm text-accent">
+      <p className="mt-10 rounded-lg border border-accent/50 bg-accent/10 px-4 py-3 text-center text-sm text-accent">
         {CODE_CARD_BANNER}
       </p>
     </figure>
