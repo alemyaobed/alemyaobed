@@ -11,7 +11,7 @@ import { CodeCard } from './CodeCard'
 export function Hero() {
   return (
     <section id="home" className="px-5 py-14 sm:py-20">
-      <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[5fr_4fr_5fr]">
+      <div className="mx-auto grid max-w-5xl items-start gap-10 lg:grid-cols-[5fr_4fr_5fr]">
         <div>
           <p className="m-0 text-sm font-medium uppercase tracking-[0.07em] text-accent">
             {SITE.role}

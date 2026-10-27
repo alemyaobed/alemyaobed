@@ -79,9 +79,6 @@ export const VALUE_PROPS: ValueProp[] = [
 
 export const CODE_CARD_TITLE = 'engineer.js'
 
-export const CODE_CARD_BANNER =
-  'Open to new opportunities - let’s build something together!'
-
 export const CODE_CARD_LINES: CodeLine[] = [
   [
     { text: 'const ', tone: 'keyword' },
