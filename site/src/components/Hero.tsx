@@ -49,9 +49,9 @@ export function Hero() {
           height={320}
           style={{
             maskImage:
-              'radial-gradient(130% 110% at 28% 18%, black 52%, transparent 76%)',
+              'radial-gradient(115% 115% at 50% 42%, black 58%, transparent 82%)',
             WebkitMaskImage:
-              'radial-gradient(130% 110% at 28% 18%, black 52%, transparent 76%)',
+              'radial-gradient(115% 115% at 50% 42%, black 58%, transparent 82%)',
           }}
           className="mx-auto aspect-[4/5] w-44 object-cover sm:w-56 lg:w-full"
         />

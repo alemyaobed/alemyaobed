@@ -1,18 +1,16 @@
 import { useState } from 'react'
 import { HERO, NAV_ITEMS, SITE } from '../content'
-import { useActiveSection } from '../hooks/useActiveSection'
 import { cvRequestHref } from '../utils'
 import { ThemeToggle } from './ThemeToggle'
 
 /**
- * The top navigation bar over the content area: section links on the
- * left, theme toggle and Request CV on the far right, collapsing into a
- * hamburger menu on mobile.
- * @returns The top navigation element.
+ * The slim top bar over the content area: theme toggle and Request CV
+ * on the far right, with a hamburger menu carrying the section links on
+ * mobile. Section navigation itself lives in the sidebar.
+ * @returns The top bar element.
  */
 export function TopNav() {
   const [open, setOpen] = useState(false)
-  const active = useActiveSection(NAV_ITEMS.map((item) => item.href))
 
   /**
    * Toggles the mobile hamburger menu.
@@ -27,25 +25,9 @@ export function TopNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-page/90 backdrop-blur-lg">
       <div className="flex h-16 items-center justify-between gap-4 px-5">
-        <div className="flex items-center gap-6">
-          <a href="#home" className="font-mono text-lg text-ink lg:hidden">
-            {SITE.shortName}
-          </a>
-          <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">
-            {NAV_ITEMS.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                aria-current={item.href === active ? 'page' : undefined}
-                className={`inline-block py-3 text-xs font-medium uppercase tracking-[0.07em] transition-colors ${
-                  item.href === active ? 'text-accent' : 'text-muted hover:text-accent'
-                }`}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-        </div>
+        <a href="#home" className="font-mono text-lg text-ink lg:hidden">
+          {SITE.shortName}
+        </a>
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <a

@@ -1,6 +1,5 @@
 import { CONTACT, NAV_ITEMS, RESUME_NAV, SITE, SOCIALS } from '../content'
 import { useActiveSection } from '../hooks/useActiveSection'
-import { ThemeToggle } from './ThemeToggle'
 import {
   IconBriefcase,
   IconClock,
@@ -80,7 +79,6 @@ export function Sidebar() {
         </nav>
       </div>
       <div className="flex gap-3 px-5">
-        <ThemeToggle />
         <a href={`mailto:${CONTACT.email}`} aria-label="Email" className={ICON_BUTTON}>
           <IconMail className="h-4 w-4" />
         </a>
