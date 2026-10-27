@@ -22,8 +22,11 @@ export function TopNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-page/90 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-5xl items-center gap-4 px-5">
-        <a href="#home" className="text-base font-medium text-ink lg:hidden">
-          {SITE.name}
+        <a
+          href="#home"
+          className="font-mono text-lg font-medium tracking-widest text-ink lg:hidden"
+        >
+          {SITE.initials}
         </a>
         <div className="ml-auto flex items-center gap-3">
           <span className="hidden sm:inline-flex">
