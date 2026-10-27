@@ -9,7 +9,7 @@ import { Section } from './Section'
  */
 export function Contact() {
   return (
-    <Section id="contact" title={CONTACT.heading} subtitle={CONTACT.lead}>
+    <Section id="contact" title={CONTACT.heading} subtitle={CONTACT.lead} bordered={false}>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <a
           href={`mailto:${CONTACT.email}`}

@@ -86,19 +86,19 @@ export function CodeCard() {
             {CODE_CARD_TITLE}
           </figcaption>
         </div>
-        {/* Height is pinned: 12 lines, two reserved rows each on mobile,
-            one row on desktop, plus vertical padding. Keeping this exact
-            means the typing animation can never resize the card. */}
-        <div className="h-[608px] overflow-hidden px-4 py-4 text-left md:h-[320px]">
+        {/* Height pinned for the nine short lines: they are short
+            enough to never wrap, so this exact height holds at every
+            breakpoint and typing cannot resize anything. */}
+        <div className="h-[248px] overflow-hidden px-4 py-4 text-left">
           {CODE_CARD_LINES.map((line, lineIndex) => (
             <p
               key={lineIndex}
-              className="m-0 flex gap-3 font-mono text-[11px] leading-6 min-h-12 sm:text-[13px] md:min-h-6 md:text-[15px]"
+              className="m-0 flex gap-3 font-mono text-[12px] leading-6 sm:text-[13px] xl:text-[15px]"
             >
               <span className="w-4 shrink-0 text-right text-xs text-muted/60">
                 {lineIndex + 1}
               </span>
-              <span className="min-w-0 whitespace-pre-wrap break-words">
+              <span className="whitespace-pre">
                 {line.map((token, tokenIndex) => {
                   const take = Math.max(0, Math.min(token.text.length, budget))
                   budget -= take
