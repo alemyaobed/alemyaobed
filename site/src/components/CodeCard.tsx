@@ -77,7 +77,7 @@ export function CodeCard() {
   const typing = typed < total
 
   return (
-    <figure ref={ref} className="m-0">
+    <figure ref={ref} className="m-0 min-w-0 lg:w-full">
       <div className="overflow-hidden rounded-xl border border-line bg-panel shadow-lg">
         <div className="flex items-center gap-2 border-b border-line px-4 py-3">
           <span className="size-3 rounded-full bg-red-400" aria-hidden="true" />
@@ -114,7 +114,7 @@ export function CodeCard() {
           )}
         </div>
       </div>
-      <p className="mt-4 rounded-lg border border-accent/50 bg-accent/10 px-4 py-3 text-center text-sm text-accent">
+      <p className="mt-6 rounded-lg border border-accent/50 bg-accent/10 px-4 py-3 text-center text-sm text-accent">
         {CODE_CARD_BANNER}
       </p>
     </figure>
