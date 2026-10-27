@@ -1,4 +1,5 @@
 import { About } from './components/About'
+import { BottomNav } from './components/BottomNav'
 import { Contact } from './components/Contact'
 import { Experience } from './components/Experience'
 import { Footer } from './components/Footer'
@@ -22,7 +23,7 @@ export default function App() {
       <Sidebar />
       <div className="flex min-h-svh flex-col lg:pl-60">
         <TopNav />
-        <main className="flex-1">
+        <main className="flex-1 pb-20 lg:pb-0">
           <Hero />
           <About />
           <Work />
@@ -34,6 +35,7 @@ export default function App() {
         </main>
         <Footer />
       </div>
+      <BottomNav />
     </>
   )
 }
