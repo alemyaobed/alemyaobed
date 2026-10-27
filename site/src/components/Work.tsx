@@ -33,7 +33,7 @@ export function Work() {
                 {project.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="rounded-md border border-accent/25 bg-accent/10 px-2.5 py-1 font-mono text-xs text-accent/90"
+                    className="rounded-md border border-emerald-500/25 bg-emerald-500/10 px-2.5 py-1 font-mono text-xs text-emerald-600 dark:text-emerald-400"
                   >
                     {tag}
                   </li>
