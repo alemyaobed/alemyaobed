@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CodeToken } from '../types'
-import { CODE_CARD_BANNER, CODE_CARD_LINES, CODE_CARD_TITLE } from '../content'
+import { CODE_CARD_LINES, CODE_CARD_TITLE } from '../content'
 
 /** Colour classes used for each token tone in the editor card. */
 const TONE_CLASSES: Record<CodeToken['tone'], string> = {
@@ -86,10 +86,10 @@ export function CodeCard() {
             {CODE_CARD_TITLE}
           </figcaption>
         </div>
-        <div
-          className="px-4 py-4 text-left"
-          style={{ minHeight: `${CODE_CARD_LINES.length * 24 + 32}px` }}
-        >
+        {/* Height is pinned: 12 lines, two reserved rows each on mobile,
+            one row on desktop, plus vertical padding. Keeping this exact
+            means the typing animation can never resize the card. */}
+        <div className="h-[608px] overflow-hidden px-4 py-4 text-left md:h-[320px]">
           {CODE_CARD_LINES.map((line, lineIndex) => (
             <p
               key={lineIndex}
@@ -113,9 +113,6 @@ export function CodeCard() {
           ))}
         </div>
       </div>
-      <p className="mt-10 rounded-lg border border-accent/50 bg-accent/10 px-4 py-3 text-center text-sm text-accent">
-        {CODE_CARD_BANNER}
-      </p>
     </figure>
   )
 }

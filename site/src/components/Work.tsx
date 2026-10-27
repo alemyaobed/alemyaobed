@@ -33,7 +33,7 @@ export function Work() {
                 {project.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="rounded-lg border border-line bg-pill px-3 py-1 font-mono text-xs text-muted"
+                    className="rounded-md border border-accent/25 bg-accent/10 px-2.5 py-1 font-mono text-xs text-accent/90"
                   >
                     {tag}
                   </li>
@@ -44,7 +44,7 @@ export function Work() {
                   href={project.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 text-sm text-accent hover:underline"
+                  className="mt-4 text-sm font-medium text-accent hover:underline"
                 >
                   {WORK_CARD_CTA} →
                 </a>
