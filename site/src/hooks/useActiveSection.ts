@@ -16,6 +16,12 @@ export function useActiveSection(hrefs: string[]): [string, (href: string) => vo
      * Computes the current section from scroll position.
      */
     const handleScroll = () => {
+      const lastHref = hrefs[hrefs.length - 1]
+      const lastElement = lastHref ? document.querySelector(lastHref) : null
+      if (lastElement && lastElement.getBoundingClientRect().bottom <= window.innerHeight) {
+        setActive(lastHref ?? hrefs[0] ?? '')
+        return
+      }
       const mark = window.scrollY + window.innerHeight * 0.35
       let current = hrefs[0] ?? ''
       for (const href of hrefs) {

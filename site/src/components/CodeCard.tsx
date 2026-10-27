@@ -87,18 +87,18 @@ export function CodeCard() {
           </figcaption>
         </div>
         <div
-          className="overflow-x-auto px-4 py-4 text-left"
-          style={{ height: `${CODE_CARD_LINES.length * 24 + 32}px` }}
+          className="px-4 py-4 text-left"
+          style={{ minHeight: `${CODE_CARD_LINES.length * 24 + 32}px` }}
         >
           {CODE_CARD_LINES.map((line, lineIndex) => (
             <p
               key={lineIndex}
-              className="m-0 flex gap-4 font-mono text-[13px] leading-6 sm:text-[15px]"
+              className="m-0 flex gap-3 font-mono text-[11px] leading-6 min-h-12 sm:text-[13px] md:min-h-6 md:text-[15px]"
             >
               <span className="w-4 shrink-0 text-right text-xs text-muted/60">
                 {lineIndex + 1}
               </span>
-              <span className="whitespace-pre">
+              <span className="min-w-0 whitespace-pre-wrap break-words">
                 {line.map((token, tokenIndex) => {
                   const take = Math.max(0, Math.min(token.text.length, budget))
                   budget -= take

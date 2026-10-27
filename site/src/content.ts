@@ -17,6 +17,7 @@ import type {
 export const SITE = {
   name: 'Obed Alemya',
   fullName: 'ALENYORIGE Obed Alemya',
+  initials: 'OA',
   shortName: 'obed',
   role: 'Software Engineer',
   location: 'Kumasi, Ghana',

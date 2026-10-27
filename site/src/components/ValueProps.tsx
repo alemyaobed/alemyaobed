@@ -20,16 +20,18 @@ const PROP_ICON = 'h-5 w-5 text-emerald-500 dark:text-emerald-400'
 export function ValueProps() {
   return (
     <Section id="how-i-work" title="What I do">
-      <div className="grid gap-10 text-center md:grid-cols-3">
+      <div className="grid gap-8 text-left md:grid-cols-3 md:gap-10 md:text-center">
         {VALUE_PROPS.map((prop) => {
           const Icon = PROP_ICONS[prop.title]
           return (
             <div key={prop.title}>
-              <h3 className="m-0 flex items-center justify-center gap-2 text-lg font-medium text-ink">
+              <h3 className="m-0 flex items-center gap-2 text-lg font-medium text-ink md:justify-center">
                 {Icon && <Icon className={PROP_ICON} />}
                 {prop.title}
               </h3>
-              <p className="mx-auto mt-2 max-w-xs text-sm leading-6 text-muted">{prop.text}</p>
+              <p className="mt-2 text-sm leading-6 text-muted md:mx-auto md:max-w-xs">
+                {prop.text}
+              </p>
             </div>
           )
         })}
