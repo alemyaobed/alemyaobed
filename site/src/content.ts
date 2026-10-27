@@ -153,8 +153,8 @@ export const CODE_CARD_LINES: CodeLine[] = [
 export const ABOUT = {
   heading: 'About',
   paragraphs: [
-    "I'm a software engineer from Kumasi, Ghana. I hold a First Class BSc in Computer Science from KNUST (2019 - 2023) and completed the ALX Software Engineering Program with a backend specialisation. At Amazéthu I grew from intern to junior engineer to my current role in cloud and infrastructure, where I led the assessment and migration of our production infrastructure from AWS to Render.",
-    'Along the way I drove QA automation with Playwright that cut deployment errors by 20%, built TekNotify (Django, RabbitMQ, Celery) at KNUST University IT Services, and took 2nd place at the 2023 DIGILOG hackathon. My toolkit spans Python and TypeScript backends, React frontends, PostgreSQL, MongoDB and MySQL, shipped with GitHub Actions and Docker.',
+    "I'm a software engineer who likes building things that run on their own. Over the last three years I have gone from writing my first production APIs as an intern to deciding where an entire product's infrastructure lives. Most of that time went into a language-learning platform: backend services in Python and Node, then QA automation that quietly cut deployment errors by a fifth, and eventually the cloud estate itself, which I assessed, argued about, and moved from AWS to Render at a fraction of the cost.",
+    'Before that, I studied computer science at KNUST and went through the ALX software engineering program, and between the two I picked up the habit I value most: measure first, then talk. These days I also run hiring for my team and build the retention analytics that tells us whether any of it is working.',
   ],
 } as const
 

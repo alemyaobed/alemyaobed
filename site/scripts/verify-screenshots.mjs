@@ -75,7 +75,7 @@ async function main() {
     await waitForServer(`http://localhost:${PORT}`)
     const browser = await chromium.launch({ executablePath: findChromium() })
     const page = await browser.newPage()
-    for (const path of ['/', '/resume/']) {
+    for (const path of ['/', '/resume']) {
       for (const viewport of VIEWPORTS) {
         await page.setViewportSize({ width: viewport.width, height: viewport.height })
         await page.goto(`http://localhost:${PORT}${path}`, { waitUntil: 'networkidle' })

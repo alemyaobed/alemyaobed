@@ -21,7 +21,7 @@ export interface SectionProps {
 export function Section({ id, title, subtitle, children }: SectionProps) {
   return (
     <section id={id} className="border-b border-line px-5 py-16">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-5xl">
         <h2 className="mb-1 text-center tracking-tight">{title}</h2>
         {subtitle && <p className="m-0 text-center text-sm text-muted">{subtitle}</p>}
         <div className="mt-8">{children}</div>

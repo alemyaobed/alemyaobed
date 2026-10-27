@@ -22,7 +22,7 @@ export function Footer() {
           ))}
         </ul>
       </nav>
-      <p className="m-0 text-sm text-muted">
+      <p className="m-0 text-center text-sm text-muted">
         © {new Date().getFullYear()} {SITE.name}. All rights reserved.
       </p>
     </footer>
