@@ -23,7 +23,7 @@ export function useActiveSection(hrefs: string[]): string {
       }
     }
     const observer = new IntersectionObserver(handleIntersect, {
-      rootMargin: '-40% 0px -55% 0px',
+      rootMargin: '-20% 0px -60% 0px',
     })
     for (const href of hrefs) {
       const element = document.querySelector(href)

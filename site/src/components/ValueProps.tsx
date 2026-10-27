@@ -25,8 +25,10 @@ export function ValueProps() {
           const Icon = PROP_ICONS[prop.title]
           return (
             <div key={prop.title}>
-              {Icon && <Icon className={PROP_ICON} />}
-              <h3 className="mt-3 text-lg font-medium text-ink">{prop.title}</h3>
+              <h3 className="m-0 flex items-center gap-2 text-lg font-medium text-ink">
+                {Icon && <Icon className={PROP_ICON} />}
+                {prop.title}
+              </h3>
               <p className="mt-2 text-sm leading-6 text-muted">{prop.text}</p>
             </div>
           )
