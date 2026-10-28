@@ -21,11 +21,22 @@ export function Work() {
             key={project.title}
             className="flex flex-col rounded-xl border border-line transition-shadow hover:shadow-lg"
           >
-            <div className="flex aspect-video items-center justify-center rounded-t-xl border-b border-line bg-gradient-to-br from-accent/25 via-panel to-accent/5">
-              <span className="font-mono text-4xl text-accent">
-                {project.title.slice(0, 1)}
-              </span>
-            </div>
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={`${project.title} screenshot`}
+                width={960}
+                height={540}
+                loading="lazy"
+                className="aspect-video w-full rounded-t-xl border-b border-line object-cover"
+              />
+            ) : (
+              <div className="flex aspect-video items-center justify-center rounded-t-xl border-b border-line bg-gradient-to-br from-accent/25 via-panel to-accent/5">
+                <span className="font-mono text-4xl text-accent">
+                  {project.title.slice(0, 1)}
+                </span>
+              </div>
+            )}
             <div className="flex flex-1 flex-col p-5">
               <h3 className="m-0 text-lg font-medium text-ink">{project.title}</h3>
               <p className="mt-2 flex-1 text-sm text-muted">{project.description}</p>
