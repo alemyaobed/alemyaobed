@@ -22,6 +22,8 @@ export interface Project {
   tags: string[]
   /** Link opened by the card's call to action; absent for private work. */
   href?: string
+  /** Card tile image; absent cards render a monogram tile instead. */
+  image?: string
 }
 
 /** A titled group of skill pills. */

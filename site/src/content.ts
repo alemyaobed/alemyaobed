@@ -173,6 +173,7 @@ export const PROJECTS: Project[] = [
       'A live product: find shops and craftsmen in Sunyani, Ghana. Deployed and running in production on a custom domain.',
     tags: ['TypeScript', 'Vite', 'Vercel'],
     href: 'https://craftsmangh.com',
+    image: '/craftsman.png',
   },
   {
     title: 'Real-Time Chat Application',
